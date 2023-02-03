@@ -1,4 +1,4 @@
-## Hi 👋, I'm Oskhar<a href="https://moskhar.my.id">&nbsp;&nbsp;<img width="22" src="docs/img/electronic-wechat.svg"></img></a>
+## Hi 👋, I'm Oskhar<a href="https://moskhar.my.id">&nbsp;&nbsp;<img width="22" src="docs/img/massage.svg"></img></a>
 I am a student at the State Islamic University🎓 of Jakarta in the process being educated Computer Science study program, with a great passion for starting a career in programming world😊.
 
 ### 🤔 More about me
