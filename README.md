@@ -1,18 +1,16 @@
 ## Hi 👋, I'm [Oskhar](https://moskhar.my.id)<a href="https://linkedin.com/in/muhamadoskhar">&nbsp;&nbsp;<img width="22" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/LinkedIn_icon.svg/2048px-LinkedIn_icon.svg.png"></img></a>
 I am a student at the State Islamic University🎓 of Jakarta in the process being educated Computer Science study program, with a great passion for starting a career in programming world😊.
 
-### 🧑🏻‍💻 Ongoing project
-
-- ✨ &nbsp; Web portfolio 3D (learn web programming unusual, and drill my skill)
-- 📹 &nbsp; Youtube channel [link](https://www.youtube.com/@grtrick__) (feel a different programming experience than usual)
-- 🤖 &nbsp; Bot wangsap (Experiment)
-
 ### 🤔 More about me
 
 - 🤓 &nbsp; a man
 - 🥶 &nbsp; Cool
 - 😱 &nbsp; iron boned
 - 🦸🏻‍♂️ &nbsp; laser edged
+
+### 🧑🏻‍💻 Ongoing project
+
+Web portfolio 3D ✨ to learn different web programming, drilling my skills; and develop my [youtube](https://www.youtube.com/@grtrick__) channel 🎥 to have a different programming experience than usual
 
 ### 🌐 Languages:
 [![Python](./docs/img/Language/candy_img/python.svg)](https://github.com/MuhamadOskhar?tab=repositories&language=python)
