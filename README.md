@@ -1,5 +1,7 @@
-### Hi there 👋
+## Hi 👋, I'm [Oskhar](https://moskhar.my.id)
 
+### 🌐 Languages:
+[I[Python](./docs/img/Language/candy_img/python.svg)](https://github.com/MuhamadOskhar?tab=repositories&language=javascript)
 <!--
 **MuhamadOskhar/MuhamadOskhar** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
