@@ -3,16 +3,16 @@ I am a student at the State Islamic University🎓 of Jakarta in the process bei
 
 ### 🧑🏻‍💻 Ongoing project
 
-- ✨ Web portfolio 3D (learn web programming unusual, and drill my skill)
-- 📹 Youtube channel [link](https://www.youtube.com/@grtrick__) (feel a different programming experience than usual)
-- 🤖 Bot wangsap (Experiment)
+- ✨ &nbsp; Web portfolio 3D (learn web programming unusual, and drill my skill)
+- 📹 &nbsp; Youtube channel [link](https://www.youtube.com/@grtrick__) (feel a different programming experience than usual)
+- 🤖 &nbsp; Bot wangsap (Experiment)
 
 ### 🤔 More about me
 
-- 🤓 a man
-- 🥶 Cool
-- 😱 iron boned
-- 🦸🏻‍♂️ laser edged
+- 🤓 &nbsp; a man
+- 🥶 &nbsp; Cool
+- 😱 &nbsp; iron boned
+- 🦸🏻‍♂️ &nbsp; laser edged
 
 ### 🌐 Languages:
 [![Python](./docs/img/Language/candy_img/python.svg)](https://github.com/MuhamadOskhar?tab=repositories&language=python)
