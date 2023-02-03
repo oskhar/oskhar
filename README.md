@@ -3,7 +3,10 @@ I am a student at the State Islamic University🎓 of Jakarta in the process bei
 
 ### 🌐 Languages:
 [![Python](./docs/img/Language/candy_img/python.svg)](https://github.com/MuhamadOskhar?tab=repositories&language=python)
-[![Python](./docs/img/Language/candy_img/javascript.svg)](https://github.com/MuhamadOskhar?tab=repositories&language=javascript)
+[![JavaScript](./docs/img/Language/candy_img/javascript.svg)](https://github.com/MuhamadOskhar?tab=repositories&language=javascript)
+[![PHP](./docs/img/Language/candy_img/php.svg)](https://github.com/MuhamadOskhar?tab=repositories&language=php)
+[![Java](./docs/img/Language/candy_img/java.svg)](https://github.com/MuhamadOskhar?tab=repositories&language=java)
+[![CSS](./docs/img/Language/candy_img/css.svg)](https://github.com/MuhamadOskhar?tab=repositories&language=css)
 <!--
 **MuhamadOskhar/MuhamadOskhar** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
