@@ -13,11 +13,11 @@ I am a student at the State Islamic University🎓 of Jakarta in the process bei
 Web portfolio 3D ✨ to learn different web programming, drilling my skills; and develop my [youtube](https://www.youtube.com/@grtrick__) channel 🎥 to have a different programming experience than usual
 
 ### 🌐 Languages:
+[![CSS](./docs/img/Language/candy_img/css.svg)](https://github.com/MuhamadOskhar?tab=repositories&language=css)
+[![PHP](./docs/img/Language/candy_img/php.svg)](https://github.com/MuhamadOskhar?tab=repositories&language=php)
 [![Python](./docs/img/Language/candy_img/python.svg)](https://github.com/MuhamadOskhar?tab=repositories&language=python)
 [![JavaScript](./docs/img/Language/candy_img/javascript.svg)](https://github.com/MuhamadOskhar?tab=repositories&language=javascript)
-[![PHP](./docs/img/Language/candy_img/php.svg)](https://github.com/MuhamadOskhar?tab=repositories&language=php)
 [![Java](./docs/img/Language/candy_img/java.svg)](https://github.com/MuhamadOskhar?tab=repositories&language=java)
-[![CSS](./docs/img/Language/candy_img/css.svg)](https://github.com/MuhamadOskhar?tab=repositories&language=css)
 <!--
 **MuhamadOskhar/MuhamadOskhar** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
