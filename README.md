@@ -15,4 +15,4 @@ Web portfolio 3D ✨ to learn different web programming, drilling my skills; and
 ### 🌐 Languages:
 [![Python](./docs/img/Language/candy_img/python.svg)](https://github.com/MuhamadOskhar?tab=repositories&language=python) [![JavaScript](./docs/img/Language/candy_img/javascript.svg)](https://github.com/MuhamadOskhar?tab=repositories&language=javascript) [![Java](./docs/img/Language/candy_img/java.svg)](https://github.com/MuhamadOskhar?tab=repositories&language=java) [![PHP](./docs/img/Language/candy_img/php.svg)](https://github.com/MuhamadOskhar?tab=repositories&language=php) [![CSS](./docs/img/Language/candy_img/css.svg)](https://github.com/MuhamadOskhar?tab=repositories&language=css)
 
-<hr>
+<br/>
