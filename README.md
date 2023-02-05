@@ -8,7 +8,6 @@ I am a student at the State Islamic University🎓 of Jakarta in the process bei
 - 😱 &nbsp; iron boned
 - 🦸🏻‍♂️ &nbsp; laser edged
 
-
 ### 💻 Ongoing project
 
 Web portfolio 3D ✨ to learn different web programming, drilling my skills; and develop my [youtube](https://www.youtube.com/@grtrick__) channel 🎥 to have a different programming experience than usual
