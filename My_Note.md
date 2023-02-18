@@ -2,6 +2,13 @@
 ##### 1) Change powerline
 `~# p10k configure`
 
+##### 2) Change grub option
+```
+~# git clone https://github.com/vinceliuice/grub2-themes.git
+~# cd grub2-themes
+~# ./install.sh -t vimix -i white
+```
+
 ### Jadwal perkuliahan
 Senin
 - Aljabar Linear ( 10.15 - 12.45 )
