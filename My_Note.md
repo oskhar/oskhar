@@ -1,12 +1,40 @@
-### Command on terminal
-##### 1) Change powerline
-`~# p10k configure`
+### Command on linux
 
-##### 2) Change grub option
+##### 0 ) Config nvidia hardware
+###### a. adding ibt parameter
+Open file `/etc/default/grub` use code editor
+add parameter `ibt=off` inside `GRUB_CMDLINE_LINUX_DEFAULT`
+> **Note**: Don't remove anything from there!
+###### b. enable early loading
+Open file `/etc/mkinitcpio.conf` use code editor
+edit paramater in `MODULES` like this `MODULES=(i915 nvidia nvidia_drm nvidia_uvm nvidia_modeset)`
+
+save and update:
 ```
-~# git clone https://github.com/vinceliuice/grub2-themes.git
-~# cd grub2-themes
-~# ./install.sh -t vimix -i white
+~$ sudo mkinitcpio -P
+```
+
+###### c. update system
+```
+~$ sudo pacman-mirrors --fasttrack 5 && sudo pacman -Syyu
+```
+
+###### d. install nvidia and restart
+```
+~$ sudo mhwd -a pci nonfree 0300
+```
+And restart now !
+
+##### 1 ) Change powerline
+```
+~$ p10k configure
+```
+
+##### 2 ) Change grub option
+```
+~$ git clone https://github.com/vinceliuice/grub2-themes.git
+~$ cd grub2-themes
+~$ ./install.sh -t vimix -i white
 ```
 
 ### Jadwal perkuliahan
