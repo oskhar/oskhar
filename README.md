@@ -7,14 +7,24 @@ I am a student at the State Islamic University🎓 of Jakarta in the process bei
 - `long-term`: Develop my [youtube](https://www.youtube.com/@grtrick__) channel 🎥 to have a different programming experience than usual
 
 ### 🌐 The Tech I Use:
-[![Python](./docs/img/Language/candy_img/python.svg)](https://github.com/MuhamadOskhar?tab=repositories&language=python)
+[![Python](./docs/img/Language/candy_img/python.svg | height=80)](https://github.com/MuhamadOskhar?tab=repositories&language=python)
 
-[![JavaScript](./docs/img/Language/candy_img/javascript.svg)](https://github.com/MuhamadOskhar?tab=repositories&language=javascript)
+[![JavaScript](./docs/img/Language/candy_img/javascript.svg | height=80)](https://github.com/MuhamadOskhar?tab=repositories&language=javascript)
 
-[![Java](./docs/img/Language/candy_img/java.svg)](https://github.com/MuhamadOskhar?tab=repositories&language=java)
+[![Java](./docs/img/Language/candy_img/java.svg | height=80)](https://github.com/MuhamadOskhar?tab=repositories&language=java)
 
-[![PHP](./docs/img/Language/candy_img/php3.svg)](https://github.com/MuhamadOskhar?tab=repositories&language=php)
+[![PHP](./docs/img/Language/candy_img/php3.svg | height=80)](https://github.com/MuhamadOskhar?tab=repositories&language=php)
 
-[![CSS](./docs/img/Language/candy_img/css.svg)](https://github.com/MuhamadOskhar?tab=repositories&language=css)
+[![CSS](./docs/img/Language/candy_img/css.svg | height=80)](https://github.com/MuhamadOskhar?tab=repositories&language=css)
+
+[![AUDACITY](./docs/img/audacity.svg | height=80)](https://github.com/MuhamadOskhar?tab=repositories&language=css)
+
+[![CSS](./docs/img/audacity.svg | height=80)](https://github.com/MuhamadOskhar?tab=repositories&language=css)
+
+[![CSS](./docs/img/audacity.svg | height=80)](https://github.com/MuhamadOskhar?tab=repositories&language=css)
+
+[![CSS](./docs/img/audacity.svg | height=80)](https://github.com/MuhamadOskhar?tab=repositories&language=css)
+
+[![CSS](./docs/img/audacity.svg | height=80)](https://github.com/MuhamadOskhar?tab=repositories&language=css)
 
 <br/>
