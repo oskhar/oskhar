@@ -7,24 +7,6 @@ I am a student at the State Islamic University🎓 of Jakarta in the process bei
 - `long-term`: Develop my [youtube](https://www.youtube.com/@grtrick__) channel 🎥 to have a different programming experience than usual
 
 ### 🌐 The Tech I Use:
-[![Python](./docs/img/Language/candy_img/python.svg)](https://github.com/MuhamadOskhar?tab=repositories&language=python)
-
-[![JavaScript](./docs/img/Language/candy_img/javascript.svg)](https://github.com/MuhamadOskhar?tab=repositories&language=javascript)
-
-[![Java](./docs/img/Language/candy_img/java.svg)](https://github.com/MuhamadOskhar?tab=repositories&language=java)
-
-[![PHP](./docs/img/Language/candy_img/php3.svg)](https://github.com/MuhamadOskhar?tab=repositories&language=php)
-
-[![CSS](./docs/img/Language/candy_img/css.svg)](https://github.com/MuhamadOskhar?tab=repositories&language=css)
-
-[![AUDACITY](./docs/img/audacity.svg)](./docs/blog/audacity.md)
-
-[![CSS](./docs/img/blender.svg)](./docs/blog/blender.md)
-
-[![CSS](./docs/img/gimp.svg)](./docs/blog/gimp.md)
-
-[![CSS](./docs/img/inkscape.svg)](./docs/blog/inkscape.md)
-
-[![CSS](./docs/img/kdenlive.svg)](./docs/blog/kdenlive.md)
+[![Python](./docs/img/Language/candy_img/python.svg)](https://github.com/MuhamadOskhar?tab=repositories&language=python) [![JavaScript](./docs/img/Language/candy_img/javascript.svg)](https://github.com/MuhamadOskhar?tab=repositories&language=javascript) [![Java](./docs/img/Language/candy_img/java.svg)](https://github.com/MuhamadOskhar?tab=repositories&language=java) [![PHP](./docs/img/Language/candy_img/php3.svg)](https://github.com/MuhamadOskhar?tab=repositories&language=php) [![CSS](./docs/img/Language/candy_img/css.svg)](https://github.com/MuhamadOskhar?tab=repositories&language=css) [![AUDACITY](./docs/img/audacity.svg)](./docs/blog/audacity.md) [![CSS](./docs/img/blender.svg)](./docs/blog/blender.md) [![CSS](./docs/img/gimp.svg)](./docs/blog/gimp.md) [![CSS](./docs/img/inkscape.svg)](./docs/blog/inkscape.md) [![CSS](./docs/img/kdenlive.svg)](./docs/blog/kdenlive.md)
 
 <br/>
