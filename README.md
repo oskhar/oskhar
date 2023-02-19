@@ -17,14 +17,14 @@ I am a student at the State Islamic University🎓 of Jakarta in the process bei
 
 [![CSS](./docs/img/Language/candy_img/css.svg | height=80)](https://github.com/MuhamadOskhar?tab=repositories&language=css)
 
-[![AUDACITY](./docs/img/audacity.svg | height=80)](https://github.com/MuhamadOskhar?tab=repositories&language=css)
+[![AUDACITY](./docs/img/audacity.svg | height=80)](https://github.com/MuhamadOskhar/MuhamadOskhar/docs/blog/audacity.md)
 
-[![CSS](./docs/img/audacity.svg | height=80)](https://github.com/MuhamadOskhar?tab=repositories&language=css)
+[![CSS](./docs/img/blender.svg | height=80)](https://github.com/MuhamadOskhar/MuhamadOskhar/docs/blog/blender.md)
 
-[![CSS](./docs/img/audacity.svg | height=80)](https://github.com/MuhamadOskhar?tab=repositories&language=css)
+[![CSS](./docs/img/gimp.svg | height=80)](https://github.com/MuhamadOskhar/MuhamadOskhar/docs/blog/gimp.md)
 
-[![CSS](./docs/img/audacity.svg | height=80)](https://github.com/MuhamadOskhar?tab=repositories&language=css)
+[![CSS](./docs/img/inkscape.svg | height=80)](https://github.com/MuhamadOskhar/MuhamadOskhar/docs/blog/inkscape.md)
 
-[![CSS](./docs/img/audacity.svg | height=80)](https://github.com/MuhamadOskhar?tab=repositories&language=css)
+[![CSS](./docs/img/kdenlive.svg | height=80)](https://github.com/MuhamadOskhar/MuhamadOskhar/docs/blog/kdenlive.md)
 
 <br/>
