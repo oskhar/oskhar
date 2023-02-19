@@ -13,7 +13,7 @@ I am a student at the State Islamic University🎓 of Jakarta in the process bei
 
 ------
 
-### 🛠️ Technology:
+### ⚙️ Technology:
 [![KDENLIVE](./docs/img/kdenlive.svg)](./docs/blog/kdenlive.md) [![INKSCAPE](./docs/img/inkscape.svg)](./docs/blog/inkscape.md) [![BLENDER](./docs/img/blender.svg)](./docs/blog/blender.md) [![AUDACITY](./docs/img/audacity.svg)](./docs/blog/audacity.md) [![GIMP](./docs/img/gimp.svg)](./docs/blog/gimp.md)
 
 <br/>
