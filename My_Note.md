@@ -2,11 +2,11 @@
 
 ##### 0 ) Config nvidia hardware
 ###### a. adding ibt parameter
-Open file `/etc/default/grub` use code editor
+Open file `/etc/default/grub` use code editor,
 add parameter `ibt=off` inside `GRUB_CMDLINE_LINUX_DEFAULT`
 > **Note**: Don't remove anything from there!
 ###### b. enable early loading
-Open file `/etc/mkinitcpio.conf` use code editor
+Open file `/etc/mkinitcpio.conf` use code editor,
 edit paramater in `MODULES` like this `MODULES=(i915 nvidia nvidia_drm nvidia_uvm nvidia_modeset)`
 
 save and update:
