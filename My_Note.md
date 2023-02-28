@@ -1,6 +1,6 @@
-### Command on linux
+## Command on linux
 
-##### 0 ) Config nvidia hardware
+#### 0 ) Config nvidia hardware
 ###### a. adding ibt parameter
 Open file `/etc/default/grub` use code editor,
 add parameter `ibt=off` inside `GRUB_CMDLINE_LINUX_DEFAULT`
@@ -25,12 +25,12 @@ save and update:
 ```
 And restart now !
 
-##### 1 ) Change powerline
+#### 1 ) Change powerline
 ```
 ~$ p10k configure
 ```
 
-##### 2 ) Change grub option
+#### 2 ) Change grub option
 ```
 ~$ git clone https://github.com/vinceliuice/grub2-themes.git
 ~$ cd grub2-themes
