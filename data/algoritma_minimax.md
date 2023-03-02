@@ -256,5 +256,69 @@ Untuk mengatasi masalah ini, Anda bisa melakukan beberapa optimasi pada algoritm
 * Move ordering: 
     teknik ini dapat mempercepat proses evaluasi langkah dengan mengurutkan langkah-langkah yang diuji berdasarkan kemungkinan keberhasilannya.
 
+    Move ordering adalah teknik dalam pemrograman permainan yang bertujuan untuk meningkatkan efisiensi pencarian dengan mengurutkan gerakan secara cerdas sehingga gerakan yang paling mungkin menghasilkan pemilihan terbaik dipertimbangkan lebih dulu.
+
+    Untuk menerapkan Move ordering pada program minimax, terdapat beberapa pendekatan yang dapat dilakukan. Berikut adalah beberapa pendekatan yang umum digunakan:
+
+    Sorting berdasarkan heuristik
+    Sorting gerakan berdasarkan heuristik tertentu yang mengurutkan gerakan yang diharapkan lebih mungkin untuk menghasilkan pemilihan terbaik di urutan terdepan. Contohnya, gerakan yang mengambil bidak lawan atau gerakan yang mendukung pengembangan pion dapat dianggap lebih baik daripada gerakan yang hanya mengembalikan bidak ke posisi sebelumnya.
+
+    Sorting berdasarkan riwayat gerakan
+    Sorting gerakan berdasarkan riwayat gerakan sebelumnya yang dapat meningkatkan efisiensi pencarian dengan mengurutkan gerakan yang mengarah ke hasil yang diinginkan lebih dulu. Contohnya, gerakan yang telah diuji sebelumnya dan mengarah ke posisi yang diinginkan dapat diberi prioritas lebih tinggi dalam urutan gerakan.
+
+    Sorting berdasarkan alpha-beta cutoff
+    Sorting gerakan berdasarkan nilai alpha-beta cutoff pada pencarian sebelumnya yang dapat meningkatkan efisiensi pencarian dengan mengurutkan gerakan yang lebih mungkin menghasilkan cutoff lebih awal lebih dulu. Gerakan yang memiliki potensi lebih besar untuk menghasilkan cutoff akan diberi prioritas lebih tinggi dalam urutan gerakan.
+
+    Berikut adalah contoh implementasi Move ordering pada program minimax dengan sorting berdasarkan heuristik:
+
+    ```python
+    def minimax(position, depth, maximizing_player, alpha, beta):
+        if depth == 0 or position.is_game_over():
+            return evaluate(position), None
+        best_move = None
+        if maximizing_player:
+            best_eval = float('-inf')
+            ordered_moves = sorted(position.legal_moves, key=heuristic_sorting)
+            for move in ordered_moves:
+                position.push(move)
+                eval = minimax(position, depth-1, False, alpha, beta)[0]
+                position.pop()
+                if eval > best_eval:
+                    best_eval = eval
+                    best_move = move
+                alpha = max(alpha, eval)
+                if alpha >= beta:
+                    break
+            return best_eval, best_move
+        else:
+            best_eval = float('inf')
+            ordered_moves = sorted(position.legal_moves, key=heuristic_sorting, reverse=True)
+            for move in ordered_moves:
+                position.push(move)
+                eval = minimax(position, depth-1, True, alpha, beta)[0]
+                position.pop()
+                if eval < best_eval:
+                    best_eval = eval
+                    best_move = move
+                beta = min(beta, eval)
+                if alpha >= beta:
+                    break
+            return best_eval, best_move
+
+    def heuristic_sorting(move):
+        # contoh heuristik sorting
+        if move.takes():
+            return 1
+        elif move.promotion:
+            return 2
+        elif move.is_castling():
+            return 3
+        elif move.is_check():
+            return 4
+        else:
+            return 5
+    ```
+    Dalam implementasi di atas, urutan gerakan diatur dengan fungsi heuristic_sorting() yang menerap
+
 Dengan menerapkan beberapa teknik optimasi pada algoritma minimax, program Anda dapat dijalankan dengan lebih efisien dan memberikan output yang akurat dalam waktu yang lebih singkat.
 
