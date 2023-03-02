@@ -318,7 +318,102 @@ Untuk mengatasi masalah ini, Anda bisa melakukan beberapa optimasi pada algoritm
         else:
             return 5
     ```
-    Dalam implementasi di atas, urutan gerakan diatur dengan fungsi heuristic_sorting() yang menerap
+    Dalam implementasi di atas, urutan gerakan diatur dengan fungsi `heuristic_sorting()` yang menerap
+
+    Pada program sebelumnya, terdapat sebuah objek Move yang memiliki beberapa properti dan method sebagai berikut:
+
+    * Properti:
+
+    start: Koordinat kotak awal untuk langkah. Merupakan array dua dimensi yang menyimpan nilai baris dan kolom.
+
+    end: Koordinat kotak tujuan untuk langkah. Merupakan array dua dimensi yang menyimpan nilai baris dan kolom.
+
+    piece: Jenis bidak yang digerakkan dalam langkah. Merupakan string yang berisi kode jenis bidak (seperti 'P' untuk pawn, 'N' untuk knight, dan seterusnya).
+
+    promotion: Jenis bidak yang dipromosikan jika pion mencapai baris paling depan lawan. Merupakan string yang berisi kode jenis bidak (seperti 'Q' untuk queen, 'R' untuk rook, dan seterusnya).
+
+    * Method:
+
+    getUCI(): Mengembalikan notasi aljabar catur (UCI) untuk langkah ini. UCI merupakan notasi standar untuk merepresentasikan langkah dalam format teks. Contoh notasi UCI adalah 'e2e4' untuk langkah pawn maju dua kotak dari e2 ke e4.
+
+    equals(other): Membandingkan langkah ini dengan langkah lainnya untuk menentukan apakah keduanya sama. Method ini mengembalikan nilai true jika kedua langkah sama dan false jika berbeda.
+
+    toString(): Mengembalikan representasi teks dari langkah ini. Merupakan representasi teks sederhana dari langkah dalam format 'from-to' (misalnya 'e2-e4').
+
+    clone(): Mengembalikan salinan langkah ini. Digunakan untuk menghindari perubahan data tidak sengaja pada langkah yang digunakan pada beberapa tempat sekaligus.
+
+    isCapture(): Memeriksa apakah langkah ini merupakan langkah menangkap bidak lawan. Method ini mengembalikan nilai true jika langkah merupakan serangan dan false jika bukan.
+
+    isCastle(): Memeriksa apakah langkah ini merupakan gerakan istimewa yaitu rokade. Method ini mengembalikan nilai true jika langkah merupakan rokade dan false jika bukan.
+
+    isPromotion(): Memeriksa apakah langkah ini merupakan promosi pion. Method ini mengembalikan nilai true jika langkah merupakan promosi pion dan false jika bukan.
+
+    Dalam program minimax pada permainan catur, objek Move digunakan untuk merepresentasikan langkah yang dilakukan pada setiap iterasi. Properti pada objek ini berisi informasi tentang koordinat kotak awal, koordinat kotak tujuan, jenis bidak yang digerakkan, dan jenis bidak yang dipromosikan (jika pion mencapai baris paling depan lawan). Sedangkan method pada objek ini digunakan untuk membandingkan langkah, mengembalikan notasi UCI, dan melakukan pemeriksaan apakah langkah tersebut adalah serangan, rokade, atau promosi pion. Dengan menggunakan objek Move, program dapat merepresentasikan langkah dengan mudah dan efisien.
+
+
 
 Dengan menerapkan beberapa teknik optimasi pada algoritma minimax, program Anda dapat dijalankan dengan lebih efisien dan memberikan output yang akurat dalam waktu yang lebih singkat.
 
+```python
+class Game:
+    def get_legal_moves(self):
+        # mengembalikan daftar langkah yang legal
+        pass
+
+    def is_game_over(self):
+        # mengembalikan True jika permainan berakhir
+        pass
+
+    def get_winner(self):
+        # mengembalikan pemenang permainan
+        pass
+
+    def make_move(self, move):
+        # membuat langkah pada papan catur
+        pass
+
+    def undo_move(self):
+        # membatalkan langkah terakhir
+        pass
+
+class Minimax:
+    def __init__(self, depth):
+        self.depth = depth
+
+    def evaluate(self, game):
+        # menghitung nilai board saat ini
+        pass
+
+    def minimax(self, game, depth, maximizing_player):
+        if depth == 0 or game.is_game_over():
+            return self.evaluate(game)
+
+        if maximizing_player:
+            max_eval = float('-inf')
+            for move in game.get_legal_moves():
+                game.make_move(move)
+                eval = self.minimax(game, depth - 1, False)
+                game.undo_move()
+                max_eval = max(max_eval, eval)
+            return max_eval
+        else:
+            min_eval = float('inf')
+            for move in game.get_legal_moves():
+                game.make_move(move)
+                eval = self.minimax(game, depth - 1, True)
+                game.undo_move()
+                min_eval = min(min_eval, eval)
+            return min_eval
+
+    def get_best_move(self, game):
+        best_move = None
+        max_eval = float('-inf')
+        for move in game.get_legal_moves():
+            game.make_move(move)
+            eval = self.minimax(game, self.depth - 1, False)
+            game.undo_move()
+            if eval > max_eval:
+                max_eval = eval
+                best_move = move
+        return best_move
+```
