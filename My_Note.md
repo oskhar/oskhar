@@ -37,6 +37,65 @@ And restart now !
 ~$ ./install.sh -t vimix -i white
 ```
 
+#### 3) Wireless screen monitor
+
+```
+~$ pamac build miraclecast-git
+```
+
+##### A. Steps to use it as sink
+
+###### a. shutdown wpa_supplicant and NetworkManager
+
+```
+~$ systemctl stop NetworkManager.service
+~$ systemctl stop wpa_supplicant.service 
+```
+
+###### b. launch wifi daemon
+
+```
+~$ sudo miracle-wifid &
+```
+
+###### c. launch sink control (your network card will be detected. here 3)
+
+```
+~$ sudo miracle-sinkctl
+[ADD]  Link: 3
+```
+
+###### d. run WiFi Display on link: 
+
+```
+> run 3
+```
+
+###### e. Pair your machine with other miracast device (mirroring)
+
+###### f. See your screen device on this machine
+
+##### B. Steps to use it as peer
+
+###### a. Repeat steps 1 and 2 from "use as sink"
+
+###### b. launch wifi control
+
+```
+~$ sudo miracle-wifictl
+```
+
+###### c. Enable visibility for other devices
+
+###### d. Locate them using scanning
+
+```
+> p2p-scan
+```
+
+###### e. Apart from list, or show info with peer &lt;mac&gt; there's nothing useful here by now. For a Q&D see [Using as peer](https://github.com/albfan/miraclecast/issues/4)
+
+
 ### Jadwal perkuliahan
 Senin
 - Aljabar Linear ( 10.15 - 12.45 )
