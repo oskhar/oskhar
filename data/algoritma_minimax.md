@@ -417,3 +417,7 @@ class Minimax:
                 best_move = move
         return best_move
 ```
+
+Fungsi dari fungsi `max` pada algoritma minimax di atas adalah untuk memilih nilai maksimum dari dua nilai yang diberikan. Dalam algoritma minimax, fungsi `max` digunakan untuk menentukan nilai terbaik yang dapat dicapai oleh pemain saat ini dari semua kemungkinan langkah yang dapat diambil oleh pemain, sedangkan fungsi `min` digunakan untuk menentukan nilai terbaik yang dapat dicapai oleh lawan dari semua kemungkinan langkah yang dapat diambil oleh lawan.
+
+Dalam implementasi algoritma minimax, fungsi `max` dan `min` biasanya saling bergantian dipanggil secara rekursif, dimulai dari pemain saat ini sebagai pemanggil pertama. Pada setiap level pemanggilan fungsi rekursif, fungsi `max` dipanggil jika pemain saat ini sedang memaksimalkan nilai, dan fungsi `min` dipanggil jika pemain saat ini sedang meminimalkan nilai. Setelah pemanggilan fungsi `max` atau `min` selesai, nilai terbaik yang ditemukan akan dikembalikan ke level pemanggilan yang lebih tinggi untuk digunakan dalam pemilihan langkah selanjutnya.
