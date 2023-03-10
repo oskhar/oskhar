@@ -125,34 +125,34 @@ Jika Anda memiliki pengetahuan tentang strategi catur dan pemrograman, tetapi ti
 
 Berikut adalah beberapa langkah yang dapat Anda lakukan untuk memulai:
 
-    Pahami Konsep Machine Learning
-    Pelajari konsep machine learning seperti supervised learning, unsupervised learning, dan reinforcement learning. Pahami cara kerja algoritma dan bagaimana model dilatih dengan menggunakan data.
+**Pahami Konsep Machine Learning**
+Pelajari konsep machine learning seperti supervised learning, unsupervised learning, dan reinforcement learning. Pahami cara kerja algoritma dan bagaimana model dilatih dengan menggunakan data.
 
-    Pelajari Algoritma Machine Learning yang Populer
-    Pelajari algoritma machine learning yang populer seperti decision tree, neural network, dan reinforcement learning. Pahami kelebihan dan kelemahan masing-masing algoritma dan kapan harus menggunakannya.
+**Pelajari Algoritma Machine Learning yang Populer**
+Pelajari algoritma machine learning yang populer seperti decision tree, neural network, dan reinforcement learning. Pahami kelebihan dan kelemahan masing-masing algoritma dan kapan harus menggunakannya.
 
-    Pelajari Aplikasi Machine Learning dalam Catur
-    Pelajari aplikasi machine learning dalam permainan catur, seperti penggunaan model AI untuk menganalisis permainan catur atau mengembangkan pesaing cerdas untuk bermain melawan pemain manusia.
+**Pelajari Aplikasi Machine Learning dalam Catur**
+Pelajari aplikasi machine learning dalam permainan catur, seperti penggunaan model AI untuk menganalisis permainan catur atau mengembangkan pesaing cerdas untuk bermain melawan pemain manusia.
 
-    Pelajari Bahasa Pemrograman dan Framework yang Digunakan
-    Pelajari bahasa pemrograman seperti Python, Java, atau C++ dan framework machine learning seperti Tensorflow, PyTorch, atau Scikit-learn. Pahami cara mengimplementasikan algoritma machine learning dalam bahasa pemrograman dan framework yang dipilih.
+**Pelajari Bahasa Pemrograman dan Framework yang Digunakan**
+Pelajari bahasa pemrograman seperti Python, Java, atau C++ dan framework machine learning seperti Tensorflow, PyTorch, atau Scikit-learn. Pahami cara mengimplementasikan algoritma machine learning dalam bahasa pemrograman dan framework yang dipilih.
 
-    Praktekkan dengan Proyek Kecil
-    Mulailah dengan proyek kecil seperti mengembangkan model AI untuk memprediksi hasil permainan catur atau menganalisis permainan catur. Dengan proyek kecil, Anda dapat mempraktekkan apa yang telah dipelajari dan meningkatkan kemampuan dalam mengimplementasikan machine learning dalam permainan catur.
+**Praktekkan dengan Proyek Kecil**
+Mulailah dengan proyek kecil seperti mengembangkan model AI untuk memprediksi hasil permainan catur atau menganalisis permainan catur. Dengan proyek kecil, Anda dapat mempraktekkan apa yang telah dipelajari dan meningkatkan kemampuan dalam mengimplementasikan machine learning dalam permainan catur.
 
-    Tingkatkan Proyek Anda
-    Setelah memahami dasar-dasar machine learning dan aplikasinya dalam permainan catur, Anda dapat meningkatkan proyek Anda dengan mengembangkan model AI yang lebih kompleks dan memiliki kinerja yang lebih baik.
+**Tingkatkan Proyek Anda**
+Setelah memahami dasar-dasar machine learning dan aplikasinya dalam permainan catur, Anda dapat meningkatkan proyek Anda dengan mengembangkan model AI yang lebih kompleks dan memiliki kinerja yang lebih baik.
 
 Dalam proses pembelajaran, jangan ragu untuk mencari referensi, bertanya pada ahli, dan berdiskusi dengan komunitas machine learning dan catur. Dengan memulai dari langkah-langkah dasar, Anda dapat memperluas pengetahuan dan kemampuan Anda dalam mengembangkan AI pada catur.
 
-    **Supervised learning**
-    Supervised learning adalah jenis machine learning di mana model belajar dari contoh yang telah dilabeli. Contohnya, kita memberi tahu model bahwa gambar yang diberikan merupakan gambar kucing atau anjing. Kemudian, model belajar untuk mengenali perbedaan antara kucing dan anjing dengan mempelajari fitur-fitur seperti bentuk telinga, bentuk kepala, warna, dan sebagainya. Tujuan dari supervised learning adalah untuk membuat model yang dapat memprediksi output yang tepat untuk input yang diberikan.
+**Supervised learning**
+Supervised learning adalah jenis machine learning di mana model belajar dari contoh yang telah dilabeli. Contohnya, kita memberi tahu model bahwa gambar yang diberikan merupakan gambar kucing atau anjing. Kemudian, model belajar untuk mengenali perbedaan antara kucing dan anjing dengan mempelajari fitur-fitur seperti bentuk telinga, bentuk kepala, warna, dan sebagainya. Tujuan dari supervised learning adalah untuk membuat model yang dapat memprediksi output yang tepat untuk input yang diberikan.
 
-    **Unsupervised learning**
-    Unsupervised learning adalah jenis machine learning di mana model tidak memiliki label atau petunjuk tentang output yang diinginkan. Model belajar dari data tanpa diketahui apakah data tersebut termasuk dalam suatu kategori atau kelompok tertentu. Contoh penggunaan unsupervised learning adalah untuk melakukan pengelompokan data yang memiliki kesamaan berdasarkan karakteristik tertentu.
+**Unsupervised learning**
+Unsupervised learning adalah jenis machine learning di mana model tidak memiliki label atau petunjuk tentang output yang diinginkan. Model belajar dari data tanpa diketahui apakah data tersebut termasuk dalam suatu kategori atau kelompok tertentu. Contoh penggunaan unsupervised learning adalah untuk melakukan pengelompokan data yang memiliki kesamaan berdasarkan karakteristik tertentu.
 
-    **Reinforcement learning**
-    Reinforcement learning adalah jenis machine learning yang meniru cara manusia belajar melalui interaksi dengan lingkungan. Dalam reinforcement learning, model mempelajari tindakan apa yang harus diambil dalam suatu situasi tertentu untuk mencapai tujuan yang diinginkan. Model akan mendapatkan hadiah atau hukuman berdasarkan tindakan yang diambilnya dan belajar untuk memaksimalkan hadiah dan meminimalkan hukuman.
+**Reinforcement learning**
+Reinforcement learning adalah jenis machine learning yang meniru cara manusia belajar melalui interaksi dengan lingkungan. Dalam reinforcement learning, model mempelajari tindakan apa yang harus diambil dalam suatu situasi tertentu untuk mencapai tujuan yang diinginkan. Model akan mendapatkan hadiah atau hukuman berdasarkan tindakan yang diambilnya dan belajar untuk memaksimalkan hadiah dan meminimalkan hukuman.
 
   Kedua jenis machine learning, supervised learning dan reinforcement learning, dapat diterapkan dalam pengembangan AI untuk permainan catur. Namun, keduanya memiliki pendekatan yang berbeda dalam mempelajari strategi dan keputusan dalam permainan catur.
 
@@ -175,17 +175,22 @@ Dengan teknik reinforcement learning dan deep neural network, AlphaZero dapat be
 
 Pelatihan model AlphaZero pada JavaScript mungkin tidak terlalu praktis karena pelatihan model ini membutuhkan sumber daya komputasi yang besar dan waktu yang cukup lama. Namun, di sini saya akan memberikan gambaran umum tentang bagaimana pelatihan model AlphaZero dilakukan pada tingkat konsep menggunakan JavaScript.
 
-    Buat representasi board catur
+* Buat representasi board catur
     Untuk memainkan permainan catur, kita perlu membuat representasi board catur pada JavaScript. Ini dapat dilakukan dengan membuat matriks 8x8 yang merepresentasikan posisi dari setiap potongan catur pada board.
 
-    Buat fungsi evaluasi state
+* Buat fungsi evaluasi state
     Fungsi evaluasi state digunakan untuk mengevaluasi state atau posisi pada board catur dan memberikan nilai yang merepresentasikan keuntungan atau kerugian yang diharapkan dari state tersebut. Dalam pelatihan AlphaZero, fungsi ini dilatih menggunakan deep neural network untuk mempelajari representasi fitur dalam permainan catur.
 
-    Buat fungsi generate moves
+* Buat fungsi generate moves
     Fungsi generate moves digunakan untuk menghasilkan semua langkah yang mungkin dari state saat ini pada board catur. Dalam pelatihan AlphaZero, model AI belajar untuk memilih langkah yang paling optimal untuk mencapai tujuan yang diinginkan, seperti mengalahkan lawan.
 
-    Buat fungsi play game
+* Buat fungsi play game
     Fungsi play game digunakan untuk memainkan satu game catur antara dua model AI yang berbeda, yaitu model AI yang sedang dilatih dan model AI yang diambil dari iterasi sebelumnya atau yang telah dilatih sebelumnya. Setiap langkah yang diambil akan dinilai berdasarkan kemenangan atau kekalahan, kemudian hasil tersebut digunakan sebagai umpan balik untuk mengoptimalkan model AI.
 
-    Buat fungsi self-play
+* Buat fungsi self-play
     Fungsi self-play digunakan untuk memainkan banyak game catur antara dua model AI yang sama, yaitu model AI yang sedang dilatih dan model AI yang sedang diuji. Setelah sejumlah game, model AI mengevaluasi kinerjanya dan memperbarui bobotnya. Proses ini diulang secara terus-menerus, sehingga model AI menjadi semakin baik dalam mempelajari strategi dan taktik catur.
+
+Neural network adalah salah satu teknik pemodelan dalam bidang kecerdasan buatan (AI) yang digunakan untuk mempelajari pola-pola yang terdapat pada data. Dalam konteks permainan catur, neural network dapat digunakan untuk mempelajari pola-pola yang terdapat pada berbagai posisi papan catur dan menghasilkan keputusan terbaik untuk setiap posisi.
+
+Neural network terdiri dari beberapa lapisan neuron buatan (artificial neuron) yang terhubung satu sama lain. Setiap neuron menerima input dari neuron di lapisan sebelumnya dan mengeluarkan output yang akan menjadi input bagi neuron di lapisan selanjutnya. Dalam permainan catur, input untuk neural network dapat berupa representasi papan catur yang dikodekan dalam bentuk vektor, sedangkan outputnya dapat berupa prediksi keputusan terbaik yang dapat diambil oleh program catur.
+

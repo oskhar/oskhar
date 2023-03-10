@@ -421,3 +421,88 @@ class Minimax:
 Fungsi dari fungsi `max` pada algoritma minimax di atas adalah untuk memilih nilai maksimum dari dua nilai yang diberikan. Dalam algoritma minimax, fungsi `max` digunakan untuk menentukan nilai terbaik yang dapat dicapai oleh pemain saat ini dari semua kemungkinan langkah yang dapat diambil oleh pemain, sedangkan fungsi `min` digunakan untuk menentukan nilai terbaik yang dapat dicapai oleh lawan dari semua kemungkinan langkah yang dapat diambil oleh lawan.
 
 Dalam implementasi algoritma minimax, fungsi `max` dan `min` biasanya saling bergantian dipanggil secara rekursif, dimulai dari pemain saat ini sebagai pemanggil pertama. Pada setiap level pemanggilan fungsi rekursif, fungsi `max` dipanggil jika pemain saat ini sedang memaksimalkan nilai, dan fungsi `min` dipanggil jika pemain saat ini sedang meminimalkan nilai. Setelah pemanggilan fungsi `max` atau `min` selesai, nilai terbaik yang ditemukan akan dikembalikan ke level pemanggilan yang lebih tinggi untuk digunakan dalam pemilihan langkah selanjutnya.
+
+Berikut adalah flowchart untuk algoritma minimax yang digunakan dalam game catur:
+```
+START
+
+1. Set depth = 3 atau lebih (berdasarkan keinginan)
+2. Jika kedalaman = 0 atau game sudah berakhir (contohnya King sudah mati), return hasil evaluasi (contohnya -9999 jika pemain putih kalah, dan 9999 jika pemain putih menang)
+3. Jika giliran pemain, lakukan:
+    a. Set bestMove = NULL
+    b. Set bestScore = -INF (nilai negatif tak terhingga)
+    c. Lakukan perulangan untuk setiap gerakan yang mungkin:
+        i. Lakukan gerakan pada papan catur
+        ii. Panggil rekursif minimax dengan kedalaman-1 dan ubah giliran pemain (dalam pemanggilan rekursif ini)
+        iii. Kembalikan papan catur ke keadaan semula
+        iv. Jika skor dari rekursif minimax lebih baik dari bestScore, set bestScore = skor rekursif dan bestMove = gerakan saat ini
+    d. Kembalikan bestMove
+4. Jika giliran lawan, lakukan:
+    a. Set bestMove = NULL
+    b. Set bestScore = INF (nilai positif tak terhingga)
+    c. Lakukan perulangan untuk setiap gerakan yang mungkin:
+        i. Lakukan gerakan pada papan catur
+        ii. Panggil rekursif minimax dengan kedalaman-1 dan ubah giliran pemain (dalam pemanggilan rekursif ini)
+        iii. Kembalikan papan catur ke keadaan semula
+        iv. Jika skor dari rekursif minimax lebih buruk dari bestScore, set bestScore = skor rekursif dan bestMove = gerakan saat ini
+    d. Kembalikan bestMove
+
+END
+```
+
+Berikut adalah contoh implementasi algoritma minimax untuk game catur dalam JavaScript:
+```js
+// Fungsi untuk menghitung skor evaluasi pada posisi saat ini
+function evaluateBoard(board) {
+  // kode implementasi evaluasi posisi
+  // return skor evaluasi
+}
+
+// Fungsi untuk menghitung skor gerakan
+function minimax(depth, maximizingPlayer, board) {
+  // Base case: jika kedalaman pencarian telah mencapai 0 atau game sudah berakhir, kembalikan skor evaluasi
+  if (depth === 0 || gameover(board)) {
+    return evaluateBoard(board);
+  }
+
+  if (maximizingPlayer) {
+    let bestScore = -Infinity;
+    let bestMove;
+    // Lakukan perulangan untuk setiap gerakan yang mungkin
+    for (let move of possibleMoves(board)) {
+      // Lakukan gerakan pada papan catur
+      board.move(move);
+      // Panggil rekursif minimax dengan kedalaman-1 dan ubah giliran pemain
+      let score = minimax(depth - 1, false, board);
+      // Kembalikan papan catur ke keadaan semula
+      board.undo();
+      // Jika skor dari rekursif minimax lebih baik dari bestScore, set bestScore = skor rekursif dan bestMove = gerakan saat ini
+      if (score > bestScore) {
+        bestScore = score;
+        bestMove = move;
+      }
+    }
+    // Kembalikan gerakan terbaik
+    return bestMove;
+  } else {
+    let bestScore = Infinity;
+    let bestMove;
+    // Lakukan perulangan untuk setiap gerakan yang mungkin
+    for (let move of possibleMoves(board)) {
+      // Lakukan gerakan pada papan catur
+      board.move(move);
+      // Panggil rekursif minimax dengan kedalaman-1 dan ubah giliran pemain
+      let score = minimax(depth - 1, true, board);
+      // Kembalikan papan catur ke keadaan semula
+      board.undo();
+      // Jika skor dari rekursif minimax lebih buruk dari bestScore, set bestScore = skor rekursif dan bestMove = gerakan saat ini
+      if (score < bestScore) {
+        bestScore = score;
+        bestMove = move;
+      }
+    }
+    // Kembalikan gerakan terbaik
+    return bestMove;
+  }
+}
+```
