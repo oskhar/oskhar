@@ -51,13 +51,13 @@ Program ini menerima empat parameter input: papan permainan (board), pemain yang
 
 Fungsi getBestMove pertama-tama membuat simpul awal (root) dari pohon pencarian dan mulai melakukan pencarian dengan melakukan loop sampai batas waktu maksimum (maxTime) tercapai. Selama loop, algoritma melakukan empat langkah: seleksi, ekspansi, simulasi, dan propagasi balik.
 
-    Seleksi: algoritma mulai dari simpul awal dan melakukan pemilihan simpul turunan (child) yang akan diproses selanjutnya. Algoritma memilih simpul turunan berdasarkan perhitungan skor tertentu yang memperhitungkan kombinasi antara penjelajahan dan eksploitasi dari simpul tersebut.
+`Seleksi`: algoritma mulai dari simpul awal dan melakukan pemilihan simpul turunan (child) yang akan diproses selanjutnya. Algoritma memilih simpul turunan berdasarkan perhitungan skor tertentu yang memperhitungkan kombinasi antara penjelajahan dan eksploitasi dari simpul tersebut.
 
-    Ekspansi: jika simpul turunan yang dipilih telah dieksplorasi sebelumnya, algoritma akan mengekspansi simpul tersebut dengan menambahkan simpul turunan baru ke dalamnya. Kemudian, algoritma akan memilih simpul turunan baru yang ditambahkan sebagai simpul yang akan diproses selanjutnya.
+`Ekspansi`: jika simpul turunan yang dipilih telah dieksplorasi sebelumnya, algoritma akan mengekspansi simpul tersebut dengan menambahkan simpul turunan baru ke dalamnya. Kemudian, algoritma akan memilih simpul turunan baru yang ditambahkan sebagai simpul yang akan diproses selanjutnya.
 
-    Simulasi: setelah simpul tujuan yang sesuai telah ditemukan, algoritma melakukan simulasi dengan mengambil gerakan secara acak pada papan permainan. Setiap gerakan akan memberikan skor tertentu, yang akan digunakan untuk memperbarui skor setiap simpul dalam jalur yang telah dilewati.
+`Simulasi`: setelah simpul tujuan yang sesuai telah ditemukan, algoritma melakukan simulasi dengan mengambil gerakan secara acak pada papan permainan. Setiap gerakan akan memberikan skor tertentu, yang akan digunakan untuk memperbarui skor setiap simpul dalam jalur yang telah dilewati.
 
-    Propagasi balik: setelah simulasi selesai, algoritma akan memperbarui skor setiap simpul yang dilewati selama seleksi dan ekspansi dengan menggunakan skor simulasi yang telah diperoleh. Hal ini dilakukan dengan menyesuaikan skor total dan frekuensi kunjungan setiap simpul dalam jalur tersebut.
+`Propagasi balik`: setelah simulasi selesai, algoritma akan memperbarui skor setiap simpul yang dilewati selama seleksi dan ekspansi dengan menggunakan skor simulasi yang telah diperoleh. Hal ini dilakukan dengan menyesuaikan skor total dan frekuensi kunjungan setiap simpul dalam jalur tersebut.
 
 Setelah pencarian selesai, algoritma akan mencari simpul turunan dengan skor terbaik (yang paling sering dikunjungi selama pencarian) dengan kedalaman maksimum (maxDepth) dan mengembalikan gerakan yang diambil oleh simpul turunan tersebut.
 
