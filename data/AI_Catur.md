@@ -194,3 +194,26 @@ Neural network adalah salah satu teknik pemodelan dalam bidang kecerdasan buatan
 
 Neural network terdiri dari beberapa lapisan neuron buatan (artificial neuron) yang terhubung satu sama lain. Setiap neuron menerima input dari neuron di lapisan sebelumnya dan mengeluarkan output yang akan menjadi input bagi neuron di lapisan selanjutnya. Dalam permainan catur, input untuk neural network dapat berupa representasi papan catur yang dikodekan dalam bentuk vektor, sedangkan outputnya dapat berupa prediksi keputusan terbaik yang dapat diambil oleh program catur.
 
+AlphaZero adalah sebuah algoritma yang dikembangkan oleh DeepMind (salah satu perusahaan anak Google) yang menggunakan metode deep learning untuk mempelajari cara bermain catur dan permainan lainnya. Algoritma ini digunakan untuk membuat mesin catur yang bisa bermain dengan sangat kuat tanpa perlu diprogram secara eksplisit dengan aturan permainan catur.
+
+Algoritma AlphaZero menggunakan dua model deep neural network, yaitu policy network dan value network. Policy network digunakan untuk memprediksi probabilitas setiap langkah yang mungkin dilakukan pada suatu posisi pada papan catur. Sedangkan value network digunakan untuk memprediksi skor evaluasi dari suatu posisi pada papan catur.
+
+AlphaZero menggunakan pendekatan reinforcement learning, di mana mesin catur akan bermain melawan dirinya sendiri untuk memperbaiki kemampuannya secara bertahap. Dalam proses training, mesin catur akan mempelajari pola-pola yang ada pada permainan catur dan cara untuk mengambil keputusan yang paling optimal pada setiap tahap permainan.
+
+Setelah mesin catur telah dilatih dengan cukup baik, AlphaZero dapat memainkan permainan catur dengan sangat kuat dan mampu mengalahkan pemain manusia terbaik. Algoritma ini telah berhasil digunakan pada permainan lain seperti Go dan Shogi, dengan hasil yang sangat impresif dalam mengalahkan pemain manusia terbaik.
+
+Jika Anda memiliki cukup waktu untuk melatih dan bereksperimen, saya merekomendasikan untuk mencoba menggunakan AlphaZero untuk permainan catur. AlphaZero telah terbukti sangat sukses pada permainan catur dan telah mengungguli beberapa pemain manusia terbaik di dunia.
+
+Namun, pelatihan AlphaZero memerlukan sumber daya komputasi yang sangat besar, termasuk GPU dan TPU, serta memerlukan waktu yang cukup lama untuk dilatih. Selain itu, penggunaan AlphaZero juga memerlukan pengetahuan yang cukup tentang deep learning dan pemrograman.
+
+Jika Anda merasa tidak memiliki sumber daya komputasi yang cukup untuk melatih AlphaZero atau tidak memiliki pengetahuan tentang deep learning dan pemrograman, Anda masih dapat mencoba mengimplementasikan Minimax dengan teknik pruning alpha-beta dan depth-first iterative deepening untuk mengoptimalkan pencarian dan mengurangi waktu komputasi yang diperlukan.
+
+Jika Anda memiliki waktu 6 bulan, itu akan memberi Anda waktu yang cukup untuk melatih AlphaZero pada permainan catur. Namun, perlu diingat bahwa pelatihan AlphaZero memerlukan sumber daya komputasi yang sangat besar, terutama GPU dan TPU.
+
+Berikut adalah perkiraan waktu yang diperlukan untuk melatih AlphaZero pada permainan catur dengan menggunakan GPU Nvidia GeForce GTX 1080:
+
+    Jaringan kecil (e.g., 20 filter pada residual blocks dan 256 nodes pada policy/value head): pelatihan selama 1 minggu hingga 1 bulan.
+    Jaringan sedang (e.g., 40 filter pada residual blocks dan 512 nodes pada policy/value head): pelatihan selama 1-3 bulan.
+    Jaringan besar (e.g., 256 filter pada residual blocks dan 2048 nodes pada policy/value head): pelatihan selama 3-6 bulan.
+
+Namun, durasi pelatihan dapat bervariasi tergantung pada jumlah data pelatihan, ukuran jaringan, hyperparameter, dan kecepatan komputasi. Oleh karena itu, untuk mendapatkan hasil yang lebih baik, Anda juga harus memperhatikan beberapa faktor kunci lainnya, seperti pengumpulan data pelatihan yang berkualitas, augmentasi data, dan optimasi hyperparameter.
