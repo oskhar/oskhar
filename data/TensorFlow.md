@@ -172,6 +172,32 @@ for (const row of dataset) {
 // Buat model
 const model = tf.sequential();
 model.add(tf.layers.conv2d({ inputShape: [8, 8, 12], filters: 64, kernelSize: 3, activation: 'relu' }));
-model.add(tf.layers.conv2d({ filters
+model.add(tf.layers.conv2d({ filters: 128, kernelSize: 3, activation: 'relu' }));
+model.add(tf.layers.flatten());
+model.add(tf.layers.dense({ units: 64, activation: 'relu' }));
+model.add(tf.layers.dense({ units: 1, activation: 'sigmoid' }));
+model.compile({ optimizer: 'adam', loss: 'binaryCrossentropy', metrics: ['accuracy'] });
+
+// Latih model
+model.fit(tf.stack(X), tf.tensor(y), { epochs: 10 }).then(() => {
+console.log('Model trained successfully!');
+});
+
+// Uji model dengan masukkan papan catur dan prediksi langkah selanjutnya
+const board = [
+['r', 'n', 'b', 'q', 'k', 'b', 'n', 'r'],
+['p', 'p', 'p', 'p', 'p', 'p', 'p', 'p'],
+[null, null, null, null, null, null, null, null],
+[null, null, null, null, null, null, null, null],
+[null, null, null, null, null, null, null, null],
+[null, null, null, null, null, null, null, null],
+['P', 'P', 'P', 'P', 'P', 'P', 'P', 'P'],
+['R', 'N', 'B', 'Q', 'K', 'B', 'N', 'R']
+];
+const tensor = boardToTensor(board);
+const prediction = model.predict(tf.expandDims(tensor, 0));
+const predictedMove = Math.floor(prediction.dataSync()[0] * 4096);
+
+console.log(Predicted move: ${predictedMove});
 
 ```
