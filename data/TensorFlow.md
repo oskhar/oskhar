@@ -198,6 +198,8 @@ const tensor = boardToTensor(board);
 const prediction = model.predict(tf.expandDims(tensor, 0));
 const predictedMove = Math.floor(prediction.dataSync()[0] * 4096);
 
-console.log(Predicted move: ${predictedMove});
+console.log("Predicted move: ${predictedMove}");
 
 ```
+
+id,rated,created_at,last_move_at,turns,victory_status,winner,increment_code,white_id,white_rating,black_id,black_rating,moves,opening_eco,opening_name,opening_ply
