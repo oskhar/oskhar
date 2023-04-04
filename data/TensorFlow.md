@@ -178,6 +178,14 @@ model.add(tf.layers.dense({ units: 64, activation: 'relu' }));
 model.add(tf.layers.dense({ units: 1, activation: 'sigmoid' }));
 model.compile({ optimizer: 'adam', loss: 'binaryCrossentropy', metrics: ['accuracy'] });
 
+// Buat Model II
+this.model = this.tf.sequential();
+this.model.add(tf.layers.dense({units: 64, activation: 'relu', inputShape: [8, 8, 12]}));
+this.model.add(tf.layers.flatten());
+this.model.add(tf.layers.dense({units: 64, activation: 'relu'}));
+this.model.add(tf.layers.dense({units: 1}));
+this.model.compile({ optimizer: 'adam', loss: 'binaryCrossentropy', metrics: ['accuracy'] });
+
 // Latih model
 model.fit(tf.stack(X), tf.tensor(y), { epochs: 10 }).then(() => {
 console.log('Model trained successfully!');
