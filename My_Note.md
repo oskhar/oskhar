@@ -95,6 +95,16 @@ And restart now !
 
 ###### e. Apart from list, or show info with peer &lt;mac&gt; there's nothing useful here by now. For a Q&D see [Using as peer](https://github.com/albfan/miraclecast/issues/4)
 
+#### 4) Change php version
+
+###### a. Instal php version and php apache with same version
+example
+
+```
+~$ sudo pacman -S php7 php7-apache
+```
+
+###### b. Change default php version
 
 ### Jadwal perkuliahan
 Senin
