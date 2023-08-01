@@ -20,3 +20,7 @@ I am a student at the State Islamic University🎓 of Jakarta in the process bei
 [![CSS](./docs/img/Language/candy_img/css.svg)](https://github.com/MuhamadOskhar?tab=repositories&language=css)
 
 <br/>
+
+### 💻 Codewars
+
+![Codewars Badge](https://www.codewars.com/users/MuhamadOskhar/badges/large)
