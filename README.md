@@ -18,5 +18,3 @@ I am a student at the State Islamic University🎓 of Jakarta in the process bei
 [![PHP](./docs/img/Language/candy_img/php3.svg)](https://github.com/MuhamadOskhar?tab=repositories&language=php)
 [![C](./docs/img/Language/candy_img/csrc.svg)](https://github.com/MuhamadOskhar?tab=repositories&language=c)
 [![CSS](./docs/img/Language/candy_img/css.svg)](https://github.com/MuhamadOskhar?tab=repositories&language=css)
-
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=muhamadoskhar&layout=compact)](https://github.com/muhamadoskhar)
