@@ -9,7 +9,7 @@ I am a student at the State Islamic University🎓 of Jakarta in the process bei
 
 ---
 
-### 🌐 Language
+### 🌐 Tech Stack
 
 [![Python](./docs/img/Language/candy_img/python.svg)](https://github.com/MuhamadOskhar?tab=repositories&language=python)
 [![JavaScript](./docs/img/Language/candy_img/javascript.svg)](https://github.com/MuhamadOskhar?tab=repositories&language=javascript)
