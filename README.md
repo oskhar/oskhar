@@ -19,4 +19,5 @@ I am a student at the State Islamic University🎓 of Jakarta in the process bei
 [![ASSEMBLY](./docs/img/Language/candy_img/assembly.svg)](https://github.com/MuhamadOskhar?tab=repositories&language=assembly)
 [![C](./docs/img/Language/candy_img/csrc.svg)](https://github.com/MuhamadOskhar?tab=repositories&language=c)
 [![CSS](./docs/img/Language/candy_img/css.svg)](https://github.com/MuhamadOskhar?tab=repositories&language=css)
+[![CSS](./docs/img/Language/candy_img/octave.svg)](https://github.com/MuhamadOskhar?tab=repositories&language=matlab)
 [![VUE](./docs/img/Language/candy_img/vue.svg)](https://github.com/MuhamadOskhar?tab=repositories&language=vue)
