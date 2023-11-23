@@ -15,7 +15,9 @@ I am a student at the State Islamic University🎓 of Jakarta in the process bei
 [![JAVASCRIPT](./docs/img/Language/candy_img/javascript.svg)](https://github.com/MuhamadOskhar?tab=repositories&language=javascript)
 [![JUPYTER](./docs/img/Language/candy_img/jupyter.svg)](https://github.com/MuhamadOskhar?tab=repositories&q=&type=&language=jupyter+notebook&sort=)
 [![JAVA](./docs/img/Language/candy_img/java.svg)](https://github.com/MuhamadOskhar?tab=repositories&language=java)
-[![ELIXIR](./docs/img/Language/candy_img/elixir.svg)](https://github.com/MuhamadOskhar?tab=repositories&language=elixir)
+
+<!-- [![ELIXIR](./docs/img/Language/candy_img/elixir.svg)](https://github.com/MuhamadOskhar?tab=repositories&language=elixir) -->
+
 [![PHP](./docs/img/Language/candy_img/php3.svg)](https://github.com/MuhamadOskhar?tab=repositories&language=php)
 [![ASSEMBLY](./docs/img/Language/candy_img/assembly.svg)](https://github.com/MuhamadOskhar?tab=repositories&language=assembly)
 [![C](./docs/img/Language/candy_img/csrc.svg)](https://github.com/MuhamadOskhar?tab=repositories&language=c)
