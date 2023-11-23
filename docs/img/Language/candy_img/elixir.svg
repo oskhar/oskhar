@@ -181,12 +181,12 @@
     <stop
        offset="0.12891875"
        stop-opacity="1"
-       style="stop-color:#4b3f9a;stop-opacity:1;"
+       style="stop-color:#4b36b7;stop-opacity:1;"
        id="stop1" />
     <stop
        offset="1"
        stop-opacity="1"
-       style="stop-color:#f3bdf9;stop-opacity:1;"
+       style="stop-color:#d6d5d6;stop-opacity:0.59215689;"
        id="stop2" />
   </linearGradient>
   <path
