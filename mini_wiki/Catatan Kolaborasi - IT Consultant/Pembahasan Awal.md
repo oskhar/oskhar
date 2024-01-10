@@ -1,0 +1,5 @@
+Pada pembuatan software, saya menggunakan laravel sebagai API karena kecepatannya dalam menangani berbagai request dan memberikan response yang sesuai.
+
+Dalam peng-install-an mungkin ada kesalahan atau ketidak sesuaian yang terjadi karena pengaruh portabilitas (perbedaan lingkungan sistem operasi). Beberapa catatan yang mungkin dapat membantu dalam memahami masalah kalian [[Composer Error]]
+
+Dalam melakukan kolaborasi antara front end dan backend melalui github tentu harus mencatat setiap perubahan dan perkembangan yang kita lakukan, dan tentunya pencatatan harus mengandung informasi yang jelas dan juga penulisan yang effesien seperti menerapkan [[Convesional Commit]]. Meski akan sangat sulit dibiasakan ketika anggota tim tidak pernah memiliki pengalaman sebelumnya, tapi konsep penggunaannya sebenarnya cukup sederhana.

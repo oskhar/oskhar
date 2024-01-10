@@ -37,6 +37,7 @@ Perlu kita pahami bahwa, membuat project yang besar perlu perhitungan yang baik 
   Penggunaan sistem pelacak isu seperti GitHub Issues atau GitLab Issues untuk mengelola tugas dan permintaan dalam proyek.
   Label dan kategori yang jelas untuk membedakan jenis isu yang ada.
   Panduan tentang cara mengajukan isu, melaporkan bug, atau mengusulkan fitur baru.
+  [[Convesional Commit]]
 
 - Proses Review Kode:
   Langkah-langkah untuk mengirimkan permintaan tarik (pull request) dan mendapatkan ulasan dari anggota tim.

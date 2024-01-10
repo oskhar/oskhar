@@ -1,0 +1,10 @@
+- [x] Mengetik kata kata untuk presentasi
+- [x] Membenarkan posisi search
+- [x] Menyelesaikan data edukasi dan berita saat diclick
+- [x] Fitur download excel format-b
+- [x] Menambahkan margin bottom pada tombol halaman format
+- [x] Publish web finish
+- [ ] Memasukan dummy data
+- [x] latihan presentasi
+- [ ] Menyelesaikan SBD course
+- [ ] Menyelesaikan Jarkom course

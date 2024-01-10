@@ -1,0 +1,183 @@
+{
+  "main": {
+    "id": "51fb4b2fd8472ef8",
+    "type": "split",
+    "children": [
+      {
+        "id": "7ff47a84686a3396",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e99af8b3bae27ae7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Laravel - implement domain driven design/Pendahuluan.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "899226c7e635035f",
+    "type": "split",
+    "children": [
+      {
+        "id": "db4076ec3d3da197",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "dd5cee6e03486dc5",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "db939b84ec03527d",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "69fc8ff975000e76",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200,
+    "collapsed": true
+  },
+  "right": {
+    "id": "6df0472e313b79ad",
+    "type": "split",
+    "children": [
+      {
+        "id": "5e40ae3eb6df5f65",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "bae757d6783b6b57",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Laravel - implement domain driven design/Pendahuluan.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "8155a157bd45c589",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Laravel - implement domain driven design/Pendahuluan.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "ce094b55658b0792",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "7f57072fd9f01e30",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Laravel - implement domain driven design/Pendahuluan.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "dd5cee6e03486dc5",
+  "lastOpenFiles": [
+    "Kegiatan besok.md",
+    "Catatan yang akan dilakukan.md",
+    "Untitled",
+    "algoritma minimax.md",
+    "AI_Catur.md",
+    "Laravel - implement domain driven design/Pendahuluan.md",
+    "Belajar API/Pendahuluan.md",
+    "Belajar API/API pada Laravel.md",
+    "TensorFlow.md",
+    "UCT.md",
+    "Untitled.canvas",
+    "WEB DEVELOPMENT IN THE AGE OF AI.md",
+    "Mereview_Skripsi.md",
+    "2023-12-06.md",
+    "Catatan Kolaborasi - IT Consultant/Pembahasan Awal.md",
+    "Catatan Kolaborasi - IT Consultant/Composer Error.md",
+    "proses_software_development.md",
+    "serangan_CSRF.md",
+    "persiapan_kolaboratif_project.md",
+    "Convesional Commit.md",
+    "backpropagation.md",
+    "Cloud Computing.md",
+    "Cloud Computing",
+    "'Laravel.md",
+    "Installisasi.md",
+    "Catatan Kolaborasi - IT Consultant",
+    "Catatan Project - Posyandu Melati/Edukasi Endpoint.md",
+    "Catatan Project - Posyandu Melati",
+    "data_mining.md",
+    "neuron_chess.md"
+  ]
+}

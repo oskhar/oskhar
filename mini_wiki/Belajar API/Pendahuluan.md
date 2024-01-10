@@ -1,6 +1,6 @@
-**Keuntungan dan Alasan Menggunakan API dalam Pengembangan Web**
+## Keuntungan dan Alasan Menggunakan API dalam Pengembangan Web
 
-API (Application Programming Interface) telah menjadi inti dari pengembangan web modern, memungkinkan aplikasi untuk berinteraksi dan berbagi data melalui perbatasan platform dan server. Berikut adalah keuntungan dan alasan yang mendalam mengapa menggunakan API dalam pengembangan web, termasuk rujukan spesifik tentang dukungan Google dan sumber lainnya:
+API (Application Programming Interface) telah menjadi inti dari pengembangan web modern, memungkinkan aplikasi untuk berinteraksi dan berbagi data melalui perbatasan platform dan server. API termasuk dalam pokok pemabahasan [[Cloud Computing]]. Berikut adalah keuntungan dan alasan yang mendalam mengapa menggunakan API dalam pengembangan web, termasuk rujukan spesifik tentang dukungan Google dan sumber lainnya:
 
 **1. Pembagian Tugas yang Efisien:**
 
@@ -44,6 +44,8 @@ API (Application Programming Interface) telah menjadi inti dari pengembangan web
 **10. Pengembangan Aplikasi Terdistribusi:**
 
 - **Pengembangan Terdistribusi:** API memungkinkan pengembangan aplikasi yang terdistribusi di berbagai lokasi geografis. Tim pengembang dapat bekerja dari berbagai tempat tanpa mengganggu koordinasi.
+
+## Beberapa Framework untuk API Building
 
 **Kesimpulan:**
 

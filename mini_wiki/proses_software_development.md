@@ -23,6 +23,7 @@ Topik ini akan membahas tentang bagian terpenting dari membuat program. Karna pr
 - Diskusi dan sepakati aturan coding seperti gaya penulisan code, format penulisan code, standar penamaan, komentar, dan alur kerja.
 - Buat pedoman dan dokumentasikan agar anggota tim dapat melihat sewaktu waktu jika terjadi kelupaan.
 - Pastikan setiap anggota paham dan setuju dari pedoman yang sudah dibuat
+- [[persiapan_kolaboratif_project]]
 
 ##### 5. Arsitektur Database
 - Conceptual Data Model
@@ -39,3 +40,6 @@ Topik ini akan membahas tentang bagian terpenting dari membuat program. Karna pr
 - Penempatan data dari database pada setiap halaman web
 - Tentukan logic pengolaan data
 - Integrasikan Database dengan UI menggunakan controller
+
+
+- [[serangan_CSRF]]

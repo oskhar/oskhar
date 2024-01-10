@@ -217,3 +217,14 @@ Berikut adalah perkiraan waktu yang diperlukan untuk melatih AlphaZero pada perm
     Jaringan besar (e.g., 256 filter pada residual blocks dan 2048 nodes pada policy/value head): pelatihan selama 3-6 bulan.
 
 Namun, durasi pelatihan dapat bervariasi tergantung pada jumlah data pelatihan, ukuran jaringan, hyperparameter, dan kecepatan komputasi. Oleh karena itu, untuk mendapatkan hasil yang lebih baik, Anda juga harus memperhatikan beberapa faktor kunci lainnya, seperti pengumpulan data pelatihan yang berkualitas, augmentasi data, dan optimasi hyperparameter.
+
+[[algoritma minimax]]
+[[backpropagation]]
+[[database_AI_catur]]
+[[dataset_chess_flann_new]]
+[[mabok_catur]]
+[[mcts_chess]]
+[[neuron_chess]]
+[[Suport_Vector_Machine]]
+[[TensorFlow]]
+[[UCT]]

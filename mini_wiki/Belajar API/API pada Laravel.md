@@ -1,18 +1,9 @@
-**Materi Teori dan Konsep: Pengenalan Laravel API**
-
-**1. Pengantar Pengenalan Laravel API:**
-
-- **Mengingat Materi Sebelumnya:** Pada video sebelumnya, kita telah memahami bagaimana memanipulasi data dictionary dan JSON di JavaScript. Kini, kita akan memperluas pemahaman kita tentang API dengan memasuki dunia pengembangan API menggunakan Laravel.
-
-**2. Mengapa Laravel untuk API:**
-
-- **Keunggulan Laravel:** Laravel adalah kerangka kerja PHP yang populer dan kuat untuk pengembangan web. Ini menyediakan berbagai fitur yang mendukung pembuatan API yang efisien dan kuat.
-- **Penggunaan Yang Beragam:** API yang dibuat dengan Laravel dapat digunakan untuk berbagai tujuan, seperti memungkinkan aplikasi mobile berkomunikasi dengan backend, menyediakan layanan data kepada aplikasi frontend, dan banyak lagi.
+### Materi Teori dan Konsep: Pengenalan Laravel API
 
 **3. Konsep Dasar API dalam Laravel:**
 
 - **Apa Itu Endpoint API:** Dalam konteks Laravel, setiap URL di mana kita menerima atau mengirim data dianggap sebagai endpoint API.
-- **Metode HTTP:** Endpoint API dapat merespons berbagai metode HTTP seperti GET, POST, PUT, dan DELETE.
+- **Metode HTTP:** Endpoint API dapat merespons berbagai metode HTTP, dengan beberapa metode yang umum digunakan seperti GET, POST, PUT, dan DELETE.
 
 **4. Langkah Pertama dengan Laravel API: Membuat Rute:**
 

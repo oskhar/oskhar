@@ -1,0 +1,17 @@
+- [x] memberitau tentang api get jumlah data di dashboard
+- [x] membuat crud galeri
+- [x] membuat chart halaman format
+- [x] membuat edit info posyandu
+- [x] membuat edit data akun
+- [x] menambahkan link profile pada tombol foto akun di kanan atas
+- [x] menambahkan pertanyaan pada logout
+- [x] refresh pagination format
+- [x] ngambil gambar tentang posyandu
+- [x] ganti text di grafik dashboard
+- [ ] loading saat upload gambar
+- [ ] mengubah warna tombol simpan pada modal edit
+- [ ] menambahkan efek hover pada setiap gambar
+- [ ] membuat crud data keluarga
+- [x] melakukan deployment tahap satu
+- [x] menambah imagesPath pada aidil
+- [ ] membuat crud format ba
