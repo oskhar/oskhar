@@ -138,27 +138,14 @@ example
 ~$ sudo dumpe2fs -h /dev/nvme0n1p8
 ```
 
-###### d. Perbaiki super blok
+###### d. Jika disk masih bermasalah, coba perbaiki untuk format NTFS
 
 ```
-~$ sudo e2fsck -b <nomor-blok> /dev/nvme0n1p8
+~$ sudo ntfsfix /dev/nvme0n1p8
 ```
 
-### Jadwal perkuliahan
+###### e. Coba mount disk secara manual
 
-Senin
-
-- Aljabar Linear ( 10.15 - 12.45 )
-- Praktikum Qiroah & Ibadah ( 13.00 - 14.40 )
-
-Selasa
-
-- Pemrograman lanjut ( 07.30 - 10.00 )
-- Statistika Elementer ( 10.15 - 12.45 )
-- Kalkulus 2 ( 13.00 - 15.30 )
-
-Rabu
-
-- Sistem Digital ( 07.30 - 10.00 )
-- Bahasa Indonesia ( 10.15 - 12.45 )
-- Islam & Ilmu Pengetahuan ( 13.00 - 15.30 )
+```
+~$ sudo mount /dev/nvme0n1p8 /mnt
+```
