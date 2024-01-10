@@ -120,19 +120,25 @@ example
 
 #### 5) Mounting disk error (Arch)
 
-###### a. Melakukan pengecekan disk
+###### a. Cek disk yang tersedia
+
+```
+~$ lsblk -f
+```
+
+###### b. Melakukan pengecekan disk
 
 ```
 ~$ sudo fsck -t <tipe-sistem-file> /dev/nvme0n1p8
 ```
 
-###### b. Lihat nomor blok
+###### c. Lihat nomor blok
 
 ```
 ~$ sudo dumpe2fs -h /dev/nvme0n1p8
 ```
 
-###### c. Perbaiki super blok
+###### d. Perbaiki super blok
 
 ```
 ~$ sudo e2fsck -b <nomor-blok> /dev/nvme0n1p8
