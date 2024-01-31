@@ -13,13 +13,38 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Laravel - implement domain driven design/Pendahuluan.md",
+                "file": "Laravel - Implementing Domain Driven Design/00 - Pendahuluan.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "72ec45053320ebd7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Laravel - Implementing Domain Driven Design/01 - Apa itu DDD.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "f2b7985683a62f46",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Laravel - Implementing Domain Driven Design/01 - Apa itu DDD.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -86,7 +111,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Laravel - implement domain driven design/Pendahuluan.md",
+                "file": "Laravel - Implementing Domain Driven Design/01 - Apa itu DDD.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +128,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Laravel - implement domain driven design/Pendahuluan.md",
+                "file": "Laravel - Implementing Domain Driven Design/01 - Apa itu DDD.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +151,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Laravel - implement domain driven design/Pendahuluan.md"
+                "file": "Laravel - Implementing Domain Driven Design/01 - Apa itu DDD.md"
               }
             }
           }
@@ -147,37 +172,38 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "dd5cee6e03486dc5",
+  "active": "f2b7985683a62f46",
   "lastOpenFiles": [
+    "Laravel - Implementing Domain Driven Design/18 - Conclusion.md",
+    "Laravel - Implementing Domain Driven Design/17 - What We Get from DDL or DDD.md",
+    "Laravel - Implementing Domain Driven Design/16 - Where to Draw the Lines.md",
+    "Laravel - Implementing Domain Driven Design/15 - Gotta Keep 'em Sparated.md",
+    "Laravel - Implementing Domain Driven Design/14 - What is Cohesion.md",
+    "Laravel - Implementing Domain Driven Design/13 - Coding Standards & Practices.md",
+    "Laravel - Implementing Domain Driven Design/12 - Depedency Management System.md",
+    "Laravel - Implementing Domain Driven Design/11 - Version Control System.md",
+    "Laravel - Implementing Domain Driven Design/10 - Integrated Development Environment.md",
+    "Laravel - Implementing Domain Driven Design/09 - PHP MVC Framework & Open Source.md",
+    "Laravel - Implementing Domain Driven Design/08 - Software Development Tooling.md",
+    "Laravel - Implementing Domain Driven Design/07 - What Does Being a Developer Mean.md",
+    "Laravel - Implementing Domain Driven Design/06 - When to Use DDD on Your Project.md",
+    "Laravel - Implementing Domain Driven Design/05 - Conclusion.md",
+    "Laravel - Implementing Domain Driven Design/04 - Costumizing DDD for Web Dev.md",
+    "Laravel - Implementing Domain Driven Design/03 - Elequent ORM.md",
+    "Laravel - Implementing Domain Driven Design/02 - Selective Content.md",
+    "Laravel - Implementing Domain Driven Design/01 - Apa itu DDD.md",
+    "Laravel - Implementing Domain Driven Design/00 - Pendahuluan.md",
     "Kegiatan besok.md",
     "Catatan yang akan dilakukan.md",
     "Untitled",
     "algoritma minimax.md",
     "AI_Catur.md",
-    "Laravel - implement domain driven design/Pendahuluan.md",
     "Belajar API/Pendahuluan.md",
     "Belajar API/API pada Laravel.md",
     "TensorFlow.md",
-    "UCT.md",
     "Untitled.canvas",
-    "WEB DEVELOPMENT IN THE AGE OF AI.md",
-    "Mereview_Skripsi.md",
-    "2023-12-06.md",
-    "Catatan Kolaborasi - IT Consultant/Pembahasan Awal.md",
-    "Catatan Kolaborasi - IT Consultant/Composer Error.md",
-    "proses_software_development.md",
-    "serangan_CSRF.md",
-    "persiapan_kolaboratif_project.md",
-    "Convesional Commit.md",
-    "backpropagation.md",
-    "Cloud Computing.md",
     "Cloud Computing",
-    "'Laravel.md",
-    "Installisasi.md",
     "Catatan Kolaborasi - IT Consultant",
-    "Catatan Project - Posyandu Melati/Edukasi Endpoint.md",
-    "Catatan Project - Posyandu Melati",
-    "data_mining.md",
-    "neuron_chess.md"
+    "Catatan Project - Posyandu Melati"
   ]
 }
