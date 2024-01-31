@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Laravel - Implementing Domain Driven Design/01 - Apa itu DDD.md",
+                "file": "Laravel - Implementing Domain Driven Design/02 - Selective Content.md",
                 "mode": "source",
                 "source": false
               }
@@ -94,8 +94,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "6df0472e313b79ad",
@@ -111,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Laravel - Implementing Domain Driven Design/01 - Apa itu DDD.md",
+                "file": "Laravel - Implementing Domain Driven Design/02 - Selective Content.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -128,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Laravel - Implementing Domain Driven Design/01 - Apa itu DDD.md",
+                "file": "Laravel - Implementing Domain Driven Design/02 - Selective Content.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -151,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Laravel - Implementing Domain Driven Design/01 - Apa itu DDD.md"
+                "file": "Laravel - Implementing Domain Driven Design/02 - Selective Content.md"
               }
             }
           }
@@ -174,6 +173,8 @@
   },
   "active": "f2b7985683a62f46",
   "lastOpenFiles": [
+    "Laravel - Implementing Domain Driven Design/01 - Apa itu DDD.md",
+    "Laravel - Implementing Domain Driven Design/02 - Selective Content.md",
     "Laravel - Implementing Domain Driven Design/18 - Conclusion.md",
     "Laravel - Implementing Domain Driven Design/17 - What We Get from DDL or DDD.md",
     "Laravel - Implementing Domain Driven Design/16 - Where to Draw the Lines.md",
@@ -190,8 +191,6 @@
     "Laravel - Implementing Domain Driven Design/05 - Conclusion.md",
     "Laravel - Implementing Domain Driven Design/04 - Costumizing DDD for Web Dev.md",
     "Laravel - Implementing Domain Driven Design/03 - Elequent ORM.md",
-    "Laravel - Implementing Domain Driven Design/02 - Selective Content.md",
-    "Laravel - Implementing Domain Driven Design/01 - Apa itu DDD.md",
     "Laravel - Implementing Domain Driven Design/00 - Pendahuluan.md",
     "Kegiatan besok.md",
     "Catatan yang akan dilakukan.md",
