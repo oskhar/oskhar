@@ -1,0 +1,33 @@
+{
+  "workbench.colorCustomizations": {
+    "gitDecoration.modifiedResourceForeground": "#a2a2ff",
+    "gitDecoration.addedResourceForeground": "#55aa7f",
+    "tab.activeBackground": "#1a1e21",
+    "tab.inactiveBackground": "#1a1e21",
+    "tab.border": "#1a1e21",
+    "tab.activeBorder": "#4d78cc",
+    "activityBar.background": "#1a1e21",
+    "activityBar.activeBackground": "#1a1e21",
+    "activityBar.activeFocusBorder": "#1a1e21",
+    "list.activeSelectionBackground": "#3aa9ff22",
+    "list.focusBackground": "#3aa9ff22",
+    "list.inactiveSelectionBackground": "#3aa9ff00",
+    "list.inactiveSelectionForeground": "#3facff",
+    "list.hoverBackground": "#3aa9ff22",
+    "scrollbar.shadow": "#00000000",
+    "sideBar.background": "#1a1e21",
+    "scrollbarSlider.background": "#00000000",
+    "scrollbarSlider.hoverBackground": "#00000000",
+    "editorGroupHeader.tabsBackground": "#1a1e21",
+    "editorStickyScroll.background": "#1a1e21",
+    "editorGroup.emptyBackground": "#1a1e21",
+    "editorBracketMatch.background": "#3aa9ff22",
+    "editorBracketMatch.border": "#3aa9ff22",
+    "editor.background": "#1a1e21",
+    "editor.selectionHighlightBackground": "#ffffff01",
+    "editor.selectionHighlightBorder": "#ffffff01",
+    "editor.wordHighlightBackground": "#3aa9ff22",
+    "editor.wordHighlightBorder": "#3aa9ff22",
+    "editor.lineHighlightBackground": "#1a1e21"
+  }
+}
