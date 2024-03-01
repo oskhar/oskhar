@@ -2,6 +2,8 @@
   "workbench.colorCustomizations": {
     "gitDecoration.modifiedResourceForeground": "#a2a2ff",
     "gitDecoration.addedResourceForeground": "#55aa7f",
+    "button.background": "#4d78cc",
+    "button.hoverBackground": "#6e99f0",
     "tab.activeBackground": "#1a1e21",
     "tab.inactiveBackground": "#1a1e21",
     "tab.border": "#1a1e21",
