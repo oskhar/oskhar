@@ -149,3 +149,25 @@ example
 ```
 ~$ sudo mount /dev/nvme0n1p8 /mnt
 ```
+
+#### 6) Window Rounded KDE (Arch)
+
+###### a. Install KDE-Rounded-Corner
+
+```
+git clone https://github.com/matinlotfali/KDE-Rounded-Corners
+cd KDE-Rounded-Corners
+mkdir build
+cd build
+cmake .. --install-prefix /usr
+make
+sudo make install
+```
+
+###### b. Aktifkan KDE-Rounded-Corner
+
+```
+sh ../tools/load.sh
+```
+
+#### 6) Best window manager: Krohnkite
