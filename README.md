@@ -1,13 +1,13 @@
 ## Hi 👋🏼, I'm oskhar<a href="https://api.whatsapp.com/send?phone=6281386380481">&nbsp;&nbsp;<img width="22" src="docs/img/massage.svg"></img></a>
 
-I am a Computer Science student, with a deep passion for starting a career in programming.
+I am a Computer Science student with a deep passion for programming and a strong desire to build a meaningful career in the tech world. I love diving into new technologies and challenging myself with complex problems.
 
 ### 💻 Ongoing Projects
 
-- **Priority:** Building a 3D web portfolio ✨ to sharpen my web programming skills.
-- **Long-term:** Expanding my [YouTube channel](https://www.youtube.com/@grtrick__) 🎥 to share unique programming experiences.
+- **Priority:** Currently focused on building a 3D web portfolio ✨ to sharpen my web programming skills and bring my creative ideas to life.
+- **Long-term:** I’m also working on expanding my [YouTube channel](https://www.youtube.com/@grtrick__) 🎥, where I share unique programming experiences, tutorials, and tips to help others in their coding journey.
 
-I’m also an enthusiastic writer, regularly sharing insights and tutorials on programming. Don’t miss my articles on [https://dev.to/oskhar](https://dev.to/oskhar) — you might find them inspiring and informative.
+In addition to coding, I’m an enthusiastic writer who loves to share insights and tutorials on programming. Writing is a way for me to explore ideas deeply, and I regularly contribute to [Dev.to](https://dev.to/oskhar). Don’t miss my articles there — they’re packed with inspiration and practical advice that you might find useful.
 
 ---
 
