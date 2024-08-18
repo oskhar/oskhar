@@ -7,7 +7,7 @@ I am a Computer Science student with a deep passion for programming and a strong
 - **Priority:** Currently focused on building a 3D web portfolio ✨ to sharpen my web programming skills and bring my creative ideas to life.
 - **Long-term:** I’m also working on expanding my [YouTube channel](https://www.youtube.com/@grtrick__) 🎥, where I share unique programming experiences, tutorials, and tips to help others in their coding journey.
 
-In addition to coding, I’m an enthusiastic writer who loves to share insights and tutorials on programming. Writing is a way for me to explore ideas deeply, and I regularly contribute to [Dev.to](https://dev.to/oskhar). Don’t miss my articles there — they’re packed with inspiration and practical advice that you might find useful.
+In addition to coding, I’m an enthusiastic writer who loves to share insights and tutorials on programming. Writing is a way for me to explore ideas deeply, and I regularly contribute to [https://dev.to/oskhar](https://dev.to/oskhar). Don’t miss my articles there — they’re packed with inspiration and practical advice that you might find useful.
 
 ---
 
