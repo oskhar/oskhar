@@ -170,4 +170,23 @@ sudo make install
 sh ../tools/load.sh
 ```
 
-#### 6) Best window manager: Krohnkite
+#### 7) Best window manager: Krohnkite
+
+#### 8) Change default dark theme gnome
+
+###### a. Jalankan perintah tersebut untuk mengubah theme
+
+```
+~$ gsettings set org.gnome.desktop.interface gtk-theme 'Adwaita-dark'
+~$ gsettings set org.gnome.shell.extensions.user-theme name 'Adwaita-dark'
+```
+
+###### b. Replace file gtk-2.0 & gtk-3.0 pada folder /etc
+
+###### c. Replace file gtk-2.0 & gtk-3.0 pada folder /.config
+
+###### d. buat file /etc/profile.d/gnome-dark-theme.sh dan ketikan ini
+
+```
+export GTK_THEME=Nama-Theme
+```
