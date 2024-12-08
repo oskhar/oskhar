@@ -190,3 +190,7 @@ sh ../tools/load.sh
 ```
 export GTK_THEME=Nama-Theme
 ```
+
+## Next setup
+
+https://github.com/soldoestech/hyprland
