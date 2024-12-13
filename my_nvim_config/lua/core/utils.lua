@@ -13,6 +13,8 @@ M.load_config = function()
     config.mappings.disabled = nil
   end
 
+  vim.opt.relativenumber = true
+
   return config
 end
 

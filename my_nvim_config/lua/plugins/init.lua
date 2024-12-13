@@ -12,6 +12,13 @@ local default_plugins = {
     end,
   },
 
+
+  {
+    'ThePrimeagen/vim-be-good',  -- Plugin untuk vim-be-good
+    config = function()
+    end
+  },
+
   {
     "NvChad/ui",
     branch = "v2.0",
@@ -121,6 +128,7 @@ local default_plugins = {
     event = "User FilePost",
     config = function()
       require "plugins.configs.lspconfig"
+      vim.keymap.set('n', 'K', vim.lsp.buf.hover, {})
     end,
   },
 
