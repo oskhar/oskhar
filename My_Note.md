@@ -194,3 +194,6 @@ export GTK_THEME=Nama-Theme
 ## Next setup
 
 https://github.com/soldoestech/hyprland
+
+# Ryujinx setup
+sudo pacman -S base-devel git cmake qt5-base qt5-tools libvorbis libpng libsdl2
