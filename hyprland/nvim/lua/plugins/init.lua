@@ -4,6 +4,8 @@ local default_plugins = {
 
   "nvim-lua/plenary.nvim",
 
+  {"ellisonleao/glow.nvim", config = true, cmd = "Glow"},
+
   {
     "NvChad/base46",
     branch = "v2.0",
@@ -123,30 +125,27 @@ local default_plugins = {
   },
 
   {
+    "posva/vim-vue",
+    event = "BufReadPost",
+  },
+
+  {
     "neovim/nvim-lspconfig",
     event = "BufReadPost",
     config = function()
       local lspconfig = require("lspconfig")
 
-      -- Configure tsserver for TypeScript (NestJS)
-      lspconfig.tsserver.setup {
+      -- Configure volar for Vue
+      lspconfig.volar.setup {
         on_attach = function(client, bufnr)
-          -- Nonaktifkan formatting dari tsserver, gunakan null-ls untuk Prettier/Eslint
-          client.server_capabilities.documentFormattingProvider = false
           local opts = { noremap = true, silent = true }
+          -- Keymaps for LSP functions
           vim.api.nvim_buf_set_keymap(bufnr, "n", "gd", "<cmd>lua vim.lsp.buf.definition()<CR>", opts)
           vim.api.nvim_buf_set_keymap(bufnr, "n", "gr", "<cmd>lua vim.lsp.buf.references()<CR>", opts)
           vim.api.nvim_buf_set_keymap(bufnr, "n", "K", "<cmd>lua vim.lsp.buf.hover()<CR>", opts)
           vim.api.nvim_buf_set_keymap(bufnr, "n", "<leader>rn", "<cmd>lua vim.lsp.buf.rename()<CR>", opts)
         end,
-        settings = {
-          typescript = {
-            inlayHints = {
-              includeInlayParameterNameHints = "all",
-              includeInlayVariableTypeHints = true,
-            },
-          },
-        },
+        capabilities = require("nvchad.lsp").capabilities, -- Load default capabilities
       }
     end,
   },
