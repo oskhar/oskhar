@@ -1,0 +1,53 @@
+[DEFAULT]
+bantime = 1h
+bantime.increment = true
+bantime.factor = 3           # Lebih agresif
+bantime.maxtime = 72h
+findtime = 5m
+maxretry = 3
+backend = systemd
+
+[sshd]
+enabled = true
+port = ssh
+filter = sshd
+logpath = %(sshd_log)s
+maxretry = 3
+findtime = 2m                # Lebih ketat
+bantime = 48h
+fail2ban_agent = systemd
+
+[nginx-http-auth]
+enabled = true
+port = http,https
+filter = nginx-http-auth
+logpath = /var/log/nginx/error.log
+maxretry = 2
+ignoreip = 127.0.0.1         # Whitelist localhost untuk auth
+
+[nginx-badbots]
+enabled = true
+port = http,https
+filter = nginx-badbots
+logpath = /var/log/nginx/access.log
+maxretry = 1
+findtime = 30m
+bantime = 24h
+banaction = iptables-multiport
+
+[nginx-noscript]
+enabled = true
+port = http,https
+filter = nginx-noscript
+logpath = /var/log/nginx/access.log
+maxretry = 1
+bantime = 24h
+
+[recidive]                    # Blokir IP yang di-ban berulang
+enabled = true
+filter = recidive
+logpath = /var/log/fail2ban.log
+banaction = iptables-allports
+bantime = 1w
+findtime = 1d
+maxretry = 3

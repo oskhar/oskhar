@@ -16,7 +16,7 @@ Berikut adalah langkah-langkah untuk mengautentikasi konsol Anda ke GitHub mengg
 ### 2. Buat Kunci SSH Baru (Jika Diperlukan)
 1. Buat kunci SSH baru:
    ```bash
-   ssh-keygen -t ed25519 -C "your_email@example.com"
+   ssh-keygen -t ed25519 -C "muhamadoskharm@gmail.com"
    ```
    - Ganti `"your_email@example.com"` dengan email yang terhubung ke akun GitHub Anda.
    - Jika Anda menggunakan versi OpenSSH lama yang tidak mendukung `ed25519`, gunakan `rsa`:
