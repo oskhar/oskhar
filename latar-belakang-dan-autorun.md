@@ -48,8 +48,8 @@ Description=MediaMTX Standalone Service
 After=network.target
 
 [Service]
-ExecStart=/home/septianputra_pratama02/test/mediamtx /home/septianputra_pratama02/test/mediamtx.yml
-WorkingDirectory=/home/septianputra_pratama02/test
+ExecStart=/home/samtek/Projects/mediamtx/mediamtx /home/samtek/Projects/mediamtx/mediamtx.yml
+WorkingDirectory=/home/samtek/Projects/mediamtx
 Restart=always
 RestartSec=5
 StandardOutput=file:/var/log/mediamtx.log
