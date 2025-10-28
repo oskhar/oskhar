@@ -9,8 +9,23 @@
 
 **Tulis langsung**
 
-| `# Program berdasarkan flowchart # Mulai a = int(input("Masukkan nilai a: ")) b = int(input("Masukkan nilai b: ")) c = 0 if a <= b:     while a <= b:         b = b - 1         c = c + 1     print("Nilai c =", c) else:     print("Nilai b kurang dari a")` |
-| :---- |
+```python
+# Program berdasarkan flowchart
+
+# Mulai
+a = int(input("Masukkan nilai a: "))
+b = int(input("Masukkan nilai b: "))
+
+c = 0
+
+if a <= b:
+    while a <= b:
+        b = b - 1
+        c = c + 1
+    print("Nilai c =", c)
+else:
+    print("Nilai b kurang dari a")
+```
 
 ## b.)
 
