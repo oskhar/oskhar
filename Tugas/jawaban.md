@@ -5,7 +5,7 @@
 ## a.)
 
 **Screenshot**  
-![][img/1-1.png]
+![Gambar](img/1-1.png)
 
 **Tulis langsung**
 
@@ -16,7 +16,7 @@
 
 jawabannya adalah 6  
 output:  
-![][img/1-b.png]
+![Gambar](img/1-b.png)
 
 ## 2.)
 
@@ -46,7 +46,7 @@ jadi
 `Jawabannya adalah 2`
 
 *Pembuktian program*
-![][img/2-b.png]
+![Gambar](img/2-b.png)
 
 ## c.)
 
@@ -64,7 +64,7 @@ jadi
 `Jawabannya adalah 2`
 
 *Pembuktian program*
-![][img/2-c.png]
+![Gambar](img/2-c.png)
 
 ## 3.)
 
