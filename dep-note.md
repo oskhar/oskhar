@@ -1,10 +1,3 @@
-Dokumentasi yang kamu tulis sekarang jujur aja: terlalu dangkal, banyak yang misleading, dan beberapa menunjukkan kamu pakai library tanpa kontrol penuh atas arsitektur.
-
-Kalau ini buat production backend, dokumentasi seperti ini bikin tim lain salah paham → akhirnya misuse dependency → technical debt.
-
-Gue rapihin **dengan level yang layak untuk engineering doc**, bukan catatan pribadi.
-
-
 # 📦 Core & Framework Layer
 
 ### **NestJS Core Packages**
@@ -323,44 +316,3 @@ Masalahnya:
 
 4. **Swagger tidak dijadikan contract**
    → ini fatal kalau tim makin besar
-
-
-# 🎯 Action Plan (Prioritas Tinggi)
-
-### 1. Bersihkan dependency
-
-* Hapus semua OpenTelemetry kalau tidak dipakai
-* Pilih SATU caching strategy
-
-
-### 2. Standarisasi layer
-
-Pisahkan jelas:
-
-* Transport (HTTP, Kafka)
-* Business logic
-* Infrastructure (DB, cache, storage)
-
-
-### 3. Jadikan DTO sebagai contract
-
-* Swagger wajib generate dari DTO
-* Tidak boleh manual response shape
-
-
-### 4. Buat “library responsibility doc”
-
-Setiap lib harus punya:
-
-* fungsi sistem
-* layer posisi
-* kapan dipakai / tidak
-
-
-Kalau kamu mau naik level sebagai backend engineer, berhenti lihat library sebagai “alat bantu fitur”.
-
-Mulai lihat mereka sebagai:
-👉 bagian dari arsitektur sistem
-
-Kalau kamu mau, kirim struktur folder/service kamu.
-Gue bakal bongkar apakah dependency ini dipakai dengan benar atau cuma “jalan tapi gak scalable”.
