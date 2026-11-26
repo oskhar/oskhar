@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Copy for Confluence</title>
+<style>
+:root{font-family:system-ui,sans-serif;color:#172b4d;background:#f4f5f7}body{margin:0}header{position:sticky;top:0;background:#fff;padding:16px;border-bottom:1px solid #dfe1e6;z-index:2}.wrap{max-width:1020px;margin:auto}.actions{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0}button,label{font:inherit;border:1px solid #b3bac5;border-radius:5px;padding:8px 12px;background:#fff;color:#172b4d;cursor:pointer}button.primary{background:#0052cc;color:white;border-color:#0052cc}button:disabled{opacity:.5;cursor:not-allowed}#status{font-size:14px;white-space:pre-wrap}main,section{max-width:960px;background:#fff;margin:24px auto;padding:28px;line-height:1.6;overflow-wrap:anywhere}main img{max-width:100%;height:auto}table{border-collapse:collapse;width:100%}td,th{border:1px solid #c1c7d0;padding:8px;text-align:left}th,pre{background:#f4f5f7}pre{padding:12px;white-space:pre-wrap}blockquote{border-left:4px solid #b3bac5;margin-left:0;padding-left:16px}#gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:12px}.asset{border:1px solid #dfe1e6;padding:10px;border-radius:6px}.asset img{width:100%;height:100px;object-fit:contain}small{display:block;color:#42526e}@media(max-width:700px){main,section{margin:12px;padding:16px}}
+</style>
+<script defer src="https://cdn.jsdelivr.net/npm/marked@15.0.12/marked.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/dompurify@3.2.6/dist/purify.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/jszip@3.10.1/dist/jszip.min.js"></script>
+<script>window.MathJax={startup:{typeset:false},svg:{fontCache:'none'}};</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-svg.js"></script>
+</head><body><header><div class="wrap"><strong>Multilingual Response Architecture · Confluence exporter</strong><div class="actions"><button class="primary" id="copy" disabled>Copy for Confluence</button><button id="html" disabled>Download embedded HTML</button><button id="zip" disabled>Download PNG assets (.zip)</button><button id="reload">Reload README</button><label>Open local README.md<input id="local" type="file" accept=".md,text/plain,text/markdown" hidden></label></div><div id="status" role="status" aria-live="polite">Loading…</div><small>Rich-text clipboard includes base64 PNG bytes. Confluence may sanitize embedded images; use Copy PNG for individual attachments or upload the PNG archive.</small></div></header><main id="document"></main><section id="assets" hidden><h2>Image attachments</h2><p>Copy each PNG as actual image clipboard data, or download and upload it into Confluence.</p><div id="gallery"></div></section>
+<script type="module">
+const $=id=>document.getElementById(id);
+const raw='https://raw.githubusercontent.com/oskhar/oskhar/main/multilingual-response-architecture/';
+const state={images:[],html:'',plain:'',busy:false};
+const status=s=>$('status').textContent=s;
+const enable=b=>['copy','html','zip'].forEach(id=>$(id).disabled=!b);
+const dataURL=blob=>new Promise((resolve,reject)=>{const r=new FileReader();r.onload=()=>resolve(r.result);r.onerror=reject;r.readAsDataURL(blob);});
+async function load(path){
+ if(!/^(README\.md|assets\/[A-Za-z0-9_.-]+)$/.test(path))throw Error('Unsupported repository path: '+path);
+ const urls=location.protocol==='file:'?[new URL(path,raw)]:[new URL(path,location.href),new URL(path,raw)];
+ for(const url of urls){try{const r=await fetch(url,{cache:'no-cache',credentials:'omit'});if(r.ok)return r;}catch{}}
+ throw Error('Cannot load '+path);
+}
+function inline(tex){const map={ell:'ℓ',tau:'τ',approx:'≈',log:'log',Theta:'Θ',theta:'θ',Omega:'Ω',times:'×',cdot:'·',leq:'≤',geq:'≥',in:'∈',neq:'≠',sum:'Σ',to:'→'};return tex.replace(/\\([A-Za-z]+)/g,(m,k)=>map[k]??m).replace(/\^2\b/g,'²').replace(/\^3\b/g,'³').replace(/\|/g,'\\|');}
+function prepare(source){
+ const generated=new Map();let eq=0,diag=0;
+ function add(type,body){const name=type+'-'+String(type==='equation'?++eq:++diag).padStart(2,'0')+'.png';generated.set(name,{type,body});return '\n\n!['+name+'](confluence-generated/'+name+')\n\n';}
+ const chunks=source.replace(/\r\n/g,'\n').replace(/<!-- confluence-exporter:start -->[\s\S]*?<!-- confluence-exporter:end -->\n?/g,'').split(/(^[ \t]*`{3,}[^\n]*\n[\s\S]*?^[ \t]*`{3,}[ \t]*(?=\n|$))/gm);
+ const md=chunks.map((s,i)=>{if(i%2){const m=s.match(/^[ \t]*`{3,}mermaid[ \t]*\n([\s\S]*?)\n[ \t]*`{3,}[ \t]*$/);return m?add('diagram',m[1]):s;}
+ return s.replace(/^[ \t]*<\/?details(?:\s+open)?>[ \t]*$/gm,'').replace(/^[ \t]*<summary><b>(.*?)<\/b><\/summary>[ \t]*$/gm,'\n**$1**\n').replace(/^> \[!(NOTE|TIP|IMPORTANT|WARNING|CAUTION)\][ \t]*$/gm,'> **$1**').replace(/\$\$([\s\S]*?)\$\$/g,(_,tex)=>add('equation',tex.trim())).replace(/`[^`\n]*`|(?<!\$)\$([^$\n]+)\$(?!\$)|\\\((.*?)\\\)/g,(m,a,b)=>a===undefined&&b===undefined?m:inline(a??b));}).join('');
+ return {md,generated};
+}
+async function raster(svg,type){
+ const el=typeof svg==='string'?new DOMParser().parseFromString(svg,'image/svg+xml').documentElement:svg.cloneNode(true);
+ const vb=(el.getAttribute('viewBox')||'').trim().split(/[\s,]+/).map(Number);
+ if(el.localName!=='svg'||vb.length!==4||!vb.every(Number.isFinite)||vb[2]<=0||vb[3]<=0)throw Error('Invalid generated SVG');
+ const ratio=vb[2]/vb[3],width=Math.max(1,Math.min(2000,Math.round((type==='equation'?220:1100)*ratio),type==='equation'?1600:1800)),height=Math.max(1,Math.round(width/ratio));
+ if(height>8000)throw Error('Generated figure too tall');
+ el.setAttribute('width',width);el.setAttribute('height',height);el.removeAttribute('style');
+ const url=URL.createObjectURL(new Blob([new XMLSerializer().serializeToString(el)],{type:'image/svg+xml;charset=utf-8'}));
+ try{const image=new Image();await new Promise((ok,no)=>{image.onload=ok;image.onerror=()=>no(Error('Cannot rasterize '+type));image.src=url;});const c=document.createElement('canvas');c.width=width;c.height=height;const ctx=c.getContext('2d');ctx.fillStyle='#fff';ctx.fillRect(0,0,width,height);ctx.drawImage(image,0,0,width,height);return await new Promise((ok,no)=>c.toBlob(b=>b?ok(b):no(Error('PNG encoding failed')),'image/png'));}finally{URL.revokeObjectURL(url);}
+}
+async function embed(img,generated,mermaid){
+ const src=img.getAttribute('src')||'';let name,blob;
+ if(src.startsWith('confluence-generated/')){name=src.split('/').pop();const a=generated.get(name);if(!a)throw Error('Unknown generated asset: '+name);if(a.type==='equation'){const el=await MathJax.tex2svgPromise(a.body,{display:true});blob=await raster(el.querySelector('svg'),a.type);}else{const result=await mermaid.render('cf-'+name.replace('.png',''),a.body);blob=await raster(result.svg,a.type);}}
+ else{if(!/^assets\/[A-Za-z0-9_.-]+\.(svg|png)$/i.test(src))throw Error('Unsupported image source: '+src);name=src.split('/').pop().replace(/\.svg$/i,'.png');const buffer=await (await load('assets/'+name)).arrayBuffer();const sig=new Uint8Array(buffer,0,Math.min(8,buffer.byteLength));if(sig.length!==8||![137,80,78,71,13,10,26,10].every((b,i)=>sig[i]===b))throw Error('Invalid PNG: '+name);blob=new Blob([buffer],{type:'image/png'});}
+ const data=await dataURL(blob);img.src=data;img.removeAttribute('srcset');img.removeAttribute('loading');img.removeAttribute('width');img.removeAttribute('height');img.style.cssText='max-width:100%;height:auto';return {name,blob,data,alt:img.alt||name};
+}
+function save(blob,name){const a=document.createElement('a'),u=URL.createObjectURL(blob);a.href=u;a.download=name;document.body.append(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(u),30000);}
+function gallery(){const root=$('gallery');root.replaceChildren();$('assets').hidden=false;for(const a of state.images){const card=document.createElement('div');card.className='asset';const img=new Image();img.src=a.data;img.alt=a.alt;const name=document.createElement('small');name.textContent=a.name;const row=document.createElement('div');row.className='actions';const copy=document.createElement('button');copy.textContent='Copy PNG';copy.onclick=async()=>{try{await navigator.clipboard.write([new ClipboardItem({'image/png':a.blob})]);status('PNG copied: '+a.name+'. Paste it into Confluence.');}catch(e){status('Image clipboard denied: '+e.message+'. Use Download PNG.');}};const dl=document.createElement('button');dl.textContent='Download PNG';dl.onclick=()=>save(a.blob,a.name);row.append(copy,dl);card.append(img,name,row);root.append(card);}}
+function formatted(doc){const clone=doc.cloneNode(true);clone.querySelectorAll('table').forEach(e=>e.style.cssText='border-collapse:collapse;width:100%');clone.querySelectorAll('td,th').forEach(e=>e.style.cssText='border:1px solid #c1c7d0;padding:8px;text-align:left;'+(e.tagName==='TH'?'background:#f4f5f7':''));clone.querySelectorAll('pre').forEach(e=>e.style.cssText='background:#f4f5f7;padding:12px;white-space:pre-wrap;font-family:monospace');clone.querySelectorAll('blockquote').forEach(e=>e.style.cssText='border-left:4px solid #b3bac5;padding-left:12px');return '<div style="font-family:Arial,sans-serif;color:#172b4d;line-height:1.6">'+clone.innerHTML+'</div>';}
+async function render(local){
+ if(state.busy)return;state.busy=true;enable(false);$('assets').hidden=true;$('document').replaceChildren();state.images=[];state.html='';state.plain='';
+ try{status('Loading README and renderers…');if(!window.marked||!window.DOMPurify||!window.MathJax?.startup?.promise||!window.JSZip)throw Error('Required library unavailable. Check network access and reload.');const source=local??await(await load('README.md')).text();const {md,generated}=prepare(source);const needsMermaid=[...generated.values()].some(a=>a.type==='diagram');const mermaid=needsMermaid?(await import('https://cdn.jsdelivr.net/npm/mermaid@11.4.1/dist/mermaid.esm.min.mjs')).default:null;mermaid?.initialize({startOnLoad:false,securityLevel:'strict',theme:'neutral',htmlLabels:false,flowchart:{htmlLabels:false}});await MathJax.startup.promise;
+ const doc=$('document');const clean=DOMPurify.sanitize(marked.parse(md,{gfm:true}),{FORBID_TAGS:['style','iframe','object','embed','form','script']});doc.innerHTML=clean;
+ const used=new Map();doc.querySelectorAll('h1,h2,h3,h4,h5,h6').forEach(h=>{const base=h.textContent.toLowerCase().replace(/[^\p{L}\p{N}\s_-]/gu,'').replace(/ /g,'-');const n=used.get(base)||0;used.set(base,n+1);h.id=base+(n?'-'+n:'');});
+ const imgs=[...doc.querySelectorAll('img')];for(let i=0;i<imgs.length;i++){status('Embedding PNG '+(i+1)+' / '+imgs.length+'…');state.images.push(await embed(imgs[i],generated,mermaid));}
+ if(imgs.some(i=>!i.src.startsWith('data:image/png;base64,')))throw Error('Not all images are embedded');state.html=formatted(doc);state.plain=doc.innerText;gallery();enable(true);status('Ready. '+state.images.length+' PNG images embedded ('+Math.round(state.images.reduce((n,a)=>n+a.blob.size,0)/1024)+' KB).');
+ }catch(e){status('Export stopped: '+e.message+'. No partial document will be copied.');}finally{state.busy=false;}
+}
+function legacyCopy(){let copied=false;const fn=e=>{if(!e.clipboardData)return;e.preventDefault();e.clipboardData.setData('text/html',state.html);e.clipboardData.setData('text/plain',state.plain);copied=true;};document.addEventListener('copy',fn);try{document.execCommand('copy');}finally{document.removeEventListener('copy',fn);}if(!copied)throw Error('Browser denied clipboard access');}
+$('copy').onclick=async()=>{try{if(navigator.clipboard?.write&&window.ClipboardItem){try{await navigator.clipboard.write([new ClipboardItem({'text/html':new Blob([state.html],{type:'text/html'}),'text/plain':new Blob([state.plain],{type:'text/plain'})})]);}catch{legacyCopy();}}else legacyCopy();status('Rich text copied with '+state.images.length+' embedded PNGs. If Confluence strips images, use Copy PNG or upload the assets.');}catch(e){status('Copy failed: '+e.message+'. Try localhost or Download embedded HTML.');}};
+$('html').onclick=()=>save(new Blob(['<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Multilingual response architecture</title></head><body>'+state.html+'</body></html>'],{type:'text/html;charset=utf-8'}),'multilingual-confluence.html');
+$('zip').onclick=async()=>{try{const zip=new JSZip();const names=new Set();for(const a of state.images){if(!names.has(a.name)){zip.file(a.name,a.blob);names.add(a.name);}}zip.file('image-manifest.txt',state.images.map((a,i)=>(i+1)+'. '+a.name+' — '+a.alt).join('\n'));save(await zip.generateAsync({type:'blob'}),'multilingual-confluence-images.zip');status('PNG archive prepared.');}catch(e){status('ZIP failed: '+e.message);}};
+$('reload').onclick=()=>render();$('local').onchange=async e=>{const f=e.target.files[0];if(f)await render(await f.text());e.target.value='';};render();
+</script></body></html>
