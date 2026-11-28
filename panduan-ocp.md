@@ -26,3 +26,9 @@ for pair in TIMEDEPOSIT:3607 CIF:01605 TIMEDEPOSIT:3806 TIMEDEPOSIT:3807; do
   printf '%s %s://%s%s%s\n' "$trx" "$protocol" "$host" "$port" "$path"
 done
 ```
+
+```
+curl -fsS --max-time 10 \
+  'http://127.0.0.1:8080/actuator/env/app.ws.api.core.timedeposit.path.3607'
+
+```
